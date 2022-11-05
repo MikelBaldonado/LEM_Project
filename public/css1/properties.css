@@ -1,0 +1,230 @@
+body{
+    background-color: #FAD9C1;
+  }
+  .properties {
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .propertiesTitle {
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    /* font-size: 60px; */
+    text-align: center;
+  }
+  
+  .searchButton{
+    text-align: center;
+    z-index: 5;
+  }
+  .propertiesList {
+    /* width: 70vw; */
+    /* height: auto; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* place-items: center; */
+    /* background-color: #04AA6D; */
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    /* flex-direction: row; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap; /*a shorthand for flex-direction: row and flex-wrap: wrap*/
+  
+  
+  }
+  
+  /* PROPERTIES ITEM STYLING */
+  
+  .propertiesItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    /* float: left; */
+    background-color: whitesmoke;
+    color: gray;
+    /* width: fit-content; */
+    /* height: 500px; */
+    text-align: center;
+    /* display: none; Hidden by default */
+    padding: 5px;
+    /* margin: 10px; */
+    -webkit-transition: transform .5s;
+    transform-origin: center;
+    z-index: 4;
+    /* vertical-align: top; */
+    transition:all 1s;
+    /* justify-content: space-around; */
+  }
+  .imageProp {
+    border-radius: 15px;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+  
+  }
+  .modalBody {
+    border-radius: 15px;
+    width: 400;
+    height: 650;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    /* float: left; */
+    background-color: whitesmoke;
+    color: black;
+    /* width: fit-content; */
+    /* height: 500px; */
+    /* text-align: center; */
+    /* display: none; Hidden by default */
+    padding: 5px;
+    /* margin: 10px; */
+    /* -webkit-transition: transform .5s; */
+    /* transform-origin: center; */
+    z-index: 4;
+    /* vertical-align: top; */
+    /* transition:all 1s; */
+    /* justify-content: space-around; */
+  
+  }
+  .propertiesItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    /* transition: 0.3s ease-in; */
+    cursor: pointer;
+    background-color: rgba(5, 50, 255, 0.945);
+    color: white;
+    transform: scale(1.05);
+    transform-origin: center;
+    transition-delay: 0.4s;
+    transition: all 1s;
+    z-index: 5;
+  }
+  .propertiesItem:hover .card-header{
+    color: white;
+    transition-delay: 0.4s;
+    transition: all 1s;
+  }
+  .card-header{
+    text-align:"center";
+    height:75px;
+    color: lightslategrey;
+  }
+  .card-body{
+    padding-top: 2px;
+  }
+  .card-body:hover{
+    color: white;
+    transition-delay: 0.4s;
+    transition: all 1s;
+  }
+  .card-footer{
+    text-align: center;
+    vertical-align: top;
+    transition:all 1s;
+  }
+  .cardButton{
+    border-radius:10px;
+    background-color: #ccc;
+    color: black;
+  }
+  .propertiesItem div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .propertiesItem h1,
+  .propertiesItem p {
+    margin-left: 20px;
+  }
+  .filterButtonTop{
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: #FE9C8F;
+    z-index: 10;
+    
+  }
+  
+  .container-fluid Button.active{
+    background-color: red;
+    color: black;
+  }
+  .filterButtonTop:hover {
+    background-color: rgba(5, 50, 255, 0.945);
+    color: white;
+  }
+  .filterButtonsVertical {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .filterButtonsVertical button {
+    background-color: #ccc; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-decoration: none; /* Remove underline from links */
+    transition-delay: 0.4s;
+    transition:all 1s;
+  }
+  
+  .filterButtonsVertical button:hover {
+    background-color: navy; /* Navy blue background on mouse-over */
+    color: white;
+    transition-delay: 0.4s;
+    transition:all 1s;
+    font-weight: bold;
+  }
+  
+  .filterButtonsVertical button.active {
+    background-color: #04AA6D; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+  .filterButtonsVertical button.active:hover {
+    background-color: navy; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+  @media only screen and (max-width: 1300px) {
+    .propertiesList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .propertiesList {
+      grid-template-columns: 1fr;
+    }
+  }
+  .bgcolor-primary{
+    background-color: #FE9C8F;
+  }
+  .COLORSCHEME {
+  
+    color: #FE9C8F; /* primary */
+    color: #FAD9C1; /* secondary */
+    color: #FEB2A8; /* info */
+    color: #F9CAA7;
+    color: #FEC8C1;
+    }
+  

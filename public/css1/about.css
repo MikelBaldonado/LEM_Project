@@ -1,0 +1,69 @@
+.about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  
+  .aboutTop {
+    width: 100%;
+    height: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .aboutBottom,
+  .OurVision,
+  .OurMission {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .aboutBottom p,
+  .OurVision p,
+  .OurMission p {
+    width: 1200px;
+    font-size: 25px;
+  }
+  
+  .about .aboutBottom h1,
+  .OurVision h1,
+  .OurMission h1 {
+    font-weight: 400;
+    font-size: 70px;
+    font-family: cursive;
+    color: black;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+  }
+  
+  /* .text-center p {
+    text-align: justify;
+    font-size: 18pt;
+  } */
+  
+  /* .OurVision,
+  .OurMission h1 {
+    font-weight: 400;
+    font-size: 70px;
+    font-family: cursive;
+    color: black;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+  } */
+  
+  /* .OurVision,
+  .OurMission p {
+    width: 1200px;
+    font-size: 25px;
+  } */
+  

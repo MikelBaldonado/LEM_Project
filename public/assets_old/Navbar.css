@@ -1,0 +1,25 @@
+.navbar-brand {
+    /* position: relative;  */
+    width: 170px;
+    left: 15px;
+    /* background-size: contain; */
+}
+  
+.navbar a{
+    color: white;
+  }
+
+a.navlink :hover{
+    color: white;
+    border-bottom: #368D96;
+  }
+.dropdown-menu{
+    color: #000;
+    background-color: #14537d;
+}
+/* .navbar-toggle {
+    background-color: transparent;
+}
+.icon-bar {
+    background-color:rgb(126, 60, 60);
+} */

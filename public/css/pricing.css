@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+  .bg {
+    height: 35vh;
+    width: 100vw;
+    background-image: url(/assets/cover1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  .card-header h3 {
+    color: #000;
+  }
+  .card-body  span{
+    text-align: justify;
+  }

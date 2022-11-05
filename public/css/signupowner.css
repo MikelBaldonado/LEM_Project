@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  #sg-up {
+    height: 40vh;
+    width: 100vw;
+    border: solid black 3px;
+    background-image: url(/assets/dream.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #signup {
+    min-height: 100vh;
+    width: 100vw;
+    border: solid black 3px;
+  }
+
+  /* div.col-md-4.mb-4{
+    background-image: url(/assets/dream.jpg); 
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+  

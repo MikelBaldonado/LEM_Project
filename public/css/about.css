@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+#about {
+  /* max-height: 120vh;
+  min-width: 100vw; */
+  font-family: 'Poppins', sans-serif;
+}
+.theCard{
+  padding:0 10px;
+  border-radius: 15px;
+  border: solid blue;
+  height: auto;
+  width: auto;
+  overflow:hidden;
+  background-color: #E19004;
+}
+.card{
+  /* box-shadow: 10px 10px 5px 2px rgba(255, 140, 2, 1); */
+  /* overflow:visible; */
+  border-radius:15px;
+  width: 250px;
+  height: 200px;
+}
+.image1 img{
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 150px;
+  width: 250px;
+}
+.image2 img{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  border: 7px solid #fff;
+  margin-top: -70px;
+
+}
+.verticalSpace{
+  padding-top: 15px;
+}
+.mainText{
+  padding: 50px 0;
+  text-align: center;
+
+}
+p{
+  font-size: 15px;
+}
+
+.row {
+  /* min-width: 100vw;
+  height: 90vh; */
+}
+
+.col-md-4 {
+  /* background-image: url(/assets/torresur_hero2.jpg); */
+  /* background-image: url(/assets/2best.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+/* .col-8 {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+} */
+p.word-wrap {
+  padding: 20px;
+  word-spacing: .5px;
+  font-size: 16pt;
+  text-align: justify;
+  
+}
+.text,
+.OurVision,
+.OurMission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.OurVision {
+  padding: 10px;
+}
+
+p {
+  font-size: 14pt;
+}
+
+/* * Smartphones */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* iPads */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+
+}
+
+/* Smartphones (landscape) */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* Desktops and Laptops */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large Screens */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* #img-bg {
+  min-width: 100vw;
+  height: 45vh;
+  background-image: url(/assets/torresur_hero2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* .aboutTop img{
+
+} */
+
+/* .about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  
+  .aboutTop {
+    width: 100%;
+    height: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .aboutBottom,
+  .OurVision,
+  .OurMission {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .aboutBottom p,
+  .OurVision p,
+  .OurMission p {
+    width: 1200px;
+    font-size: 25px;
+  }
+  
+  .about .aboutBottom h1,
+  .OurVision h1,
+  .OurMission h1 {
+    font-weight: 400;
+    font-size: 70px;
+    font-family: cursive;
+    color: black;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+  } */
+  
+  /* .text-center p {
+    text-align: justify;
+    font-size: 18pt;
+  } */
+  
+  /* .OurVision,
+  .OurMission h1 {
+    font-weight: 400;
+    font-size: 70px;
+    font-family: cursive;
+    color: black;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+  } */
+  
+  /* .OurVision,
+  .OurMission p {
+    width: 1200px;
+    font-size: 25px;
+  } */
+  

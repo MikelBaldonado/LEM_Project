@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+
+.navbar-brand {
+  width: 170px;
+  left: 15px; 
+}
+  
+.navbar a{
+  color: white;
+}
+
+.navbar li :hover {
+  border-bottom: 2px solid #368D96;
+  color: #ffff;
+  width: auto;
+}
+
+
+.dropdown-menu{
+  color: #000;
+  background-color: #14537d;
+}
+
+/* Discover */
+#discover {
+  min-height: 130vh;
+  width: cover;
+}
+  
+/* RECENT */
+
+#recent {
+  padding: 10px;
+  /* height: 80vh; */
+  /* width: auto; */
+  background-color: #10202B;
+  }
+  
+.recent-image img {
+  /* margin-left: 190px; */
+}
+  
+.recent-image h3 {
+  margin-left: 190px;
+  color: #fff;
+  font-size: 1.8rem;
+}
+  
+.grid-container1 {
+  display: grid;
+  justify-content: space-evenly;
+  column-gap: 3px;
+  grid-template-columns: auto auto auto;
+  /* position: relative; */
+}
+  
+.grid-item1 img {
+  width: 20vw;
+  height: 30vh;
+  display: block;
+  border-radius: 5px;
+  border: solid white;
+  cursor: pointer; 
+}
+  
+.overlay {
+  /* position: relative; */
+  /* margin-top: 2.4rem; */
+  /* bottom: 0; */
+  background: #10202b6c;
+  /* transition: .5s ease; */
+  color: #fff;
+  width: 300px;
+  height: 220px;
+  /* text-align: center;
+  display: flex;
+  flex-flow: row wrap; */
+  /* height:12rem; */
+  /* transition: 0.25s ease; */
+}
+  
+.overlay button{
+  width: 5.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  background-color:#368D96;
+  color: #fff;
+}
+  
+.overlay p {
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  font-size: 12pt;
+}
+  
+.grid-container2 {
+  display: grid;
+  justify-content: space-evenly;
+  column-gap: 3px;
+  grid-template-columns: auto auto auto;
+  /* position: relative; */
+}
+  
+.grid-item2 img {
+  width: 20vw;
+  /* height: 30vh; */
+  display: block;
+  border-radius: 5px;
+  border: solid white;
+  cursor: pointer; 
+}
+
+footer {
+  min-height: 30vh;
+  color: #000;
+  background-color: #FAD9C1;
+  /* padding: 30px; */
+  
+}
+
+footer a {
+  text-decoration: none;
+  color:#000;
+  list-style-type: none; 
+  font-size: 17px; 
+}
+.nav a:hover {
+  color: #000;
+  border-bottom: 2px solid #368D96;
+  width: auto;
+}
