@@ -1,3 +1,5 @@
+<title>List Of Agents</title>
+<link href="{{asset('css/createowner.css')}}" rel="stylesheet">
 @extends('layouts.navbar')
 
 @section('content')
@@ -49,11 +51,11 @@
                       <td>{{$item->contact}}</td>
                       {{-- <td>{{$item->owner}}</td> --}}
                       <td>
-                          <a href="/agents/{{$item->id}}/edit" class="btn btn-warning" style="width:100px;">Edit</a>
+                          <a href="/agents/{{$item->id}}/edit" class="btn b" style="width:100px;">Edit</a>
                           <form action="/agents/{{$item->id}}" method='post'>
                             {{method_field('DELETE')}}
                             {!! csrf_field() !!}
-                            <input type="submit" value="Delete" class='btn btn-danger' style="width:100px;">
+                            <input type="submit" value="Delete" class='btn' style="width:100px;">
                           </form>
                       </td>
                     </tr>

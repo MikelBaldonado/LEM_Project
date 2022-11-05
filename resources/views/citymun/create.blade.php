@@ -1,3 +1,5 @@
+
+<link href="{{asset('css/register.css')}}" rel="stylesheet">
 @extends('layouts.navbar')
 @section('content')
 
@@ -23,11 +25,11 @@
                     </select>
                     
 
-                    <input type="text" placeholder="City/Municipality" class="form-control" name="citymun_description">
+                    <input type="text" placeholder="City/Municipality" class="form-control shadow" name="citymun_description" style="border:#368D96 solid 1px;">
                     <br>
                     
                     
-                    <input type="submit" class="btn btn-primary" value="Save">
+                    <input type="submit" class="btn" value="Save">
                 </form>
             {{-- </div>
             <div class="modal-footer">

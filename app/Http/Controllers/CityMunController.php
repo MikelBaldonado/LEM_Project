@@ -30,7 +30,9 @@ class CityMunController extends Controller
      */
     public function create()
     {
-        $province = province::all();
+        // $province = province::all();
+        $province = DB::table("province_tbl")
+        ->get();
 
         // return view('citymun.create');
         return view('citymun.create')->with('province', $province );

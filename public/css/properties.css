@@ -120,7 +120,7 @@ body{
     padding-top: 2px;
   }
   .card-body:hover{
-    color: white;
+    color: #000;
     transition-delay: 0.4s;
     transition: all 1s;
   }

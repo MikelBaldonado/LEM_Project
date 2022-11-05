@@ -14,9 +14,9 @@
             <div class="modal-body"> --}}
                 <form action="/province" method='post'>
                     {!! csrf_field() !!}
-                    <input type="text" placeholder="Province Description" class="form-control" name="province_description">
+                    <input type="text" placeholder="Province Description" class="form-control shadow" name="province_description"  style="border:#368D96 solid 1px;">
                     <br>
-                    <input type="submit" class="btn btn-primary" value="Save">
+                    <input type="submit" class="btn btn-dark" value="Save">
                 </form>
             {{-- </div>
             <div class="modal-footer">

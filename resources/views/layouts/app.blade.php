@@ -42,9 +42,18 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">Home</a>
           </li>
+          @guest
+          @if(Route::has('login'))
           <li class="nav-item">
-            <a class="nav-link" href="/properties">Properties</a>
+            <a class="nav-link" href="/propertiesShow">Properties</a>
           </li>
+          @else
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/properties">Properties</a>
+          </li>
+          @endif
+          @endguest
+          
           <li class="nav-item">
             <a class="nav-link" href="/about">About</a>
           </li>

@@ -26,8 +26,6 @@ class PropertiesController extends Controller
             ->leftJoin("city_municipality_tbl", "properties_tbl.city_mun_id", "=", "city_municipality_tbl.city_mun_id")
             ->leftJoin("image_tbl", "property_image_id", "=", "image_tbl.image_id")
             ->leftJoin("images", "property_image_id", "=", "images.id")
-            // ->where('properties_tbl.property_province_id', '=', $filter_province)
-            // ->where('properties_tbl.city_mun_id', '=', $filter_citymun)
             ->orderBy("province_description", "asc")
             ->get();
             // return view('properties.index')->with('properties', $properties);
@@ -48,8 +46,13 @@ class PropertiesController extends Controller
                 'citymunicipality' =>$citymunicipality,
                 'filterprovince' =>$filterprovince
             ];
-            return view('properties.index')->with($data);
+            return view('propertiesShow.index')->with($data);
 
+    }
+
+    public function showAdminIndex() {
+        $properties = properties::orderby('property_description', 'asc')->simplePaginate(5);        
+        return view('properties.index')->with('properties', $properties);
     }
 
 
@@ -85,7 +88,7 @@ public function search(Request $request)
         ->orderBy("city_mun_description", "asc")
         ->get();
 
-    }else if ($filter_citymun && !$filter_province){
+    }elseif ($filter_citymun && !$filter_province){
         $properties = DB::table("properties_tbl")
         ->leftJoin("province_tbl", "properties_tbl.property_province_id", "=", "province_tbl.province_id")
         ->leftJoin("city_municipality_tbl", "properties_tbl.city_mun_id", "=", "city_municipality_tbl.city_mun_id")
@@ -202,7 +205,7 @@ public function filter(Request $request)
             'province' => $province,
             'citymunicipality' =>$citymunicipality
         ];
-        return view('properties.index')->with($data);
+        return view('propertiesShow.index')->with($data);
         
 }
 

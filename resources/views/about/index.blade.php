@@ -19,7 +19,7 @@
               <div></div>
               <div class="card" style="width:350px; "> <!--style="border-radius: 15px;"Style has to be applied directly here to take effect-->
                   <div class="image1"><img src="/assets/torresur_hero2.jpg" alt=""></div>
-                  <div class="image2"><img src="/assets/LomejaneBabao.jpg" alt=""></div>
+                  {{-- <div class="image2"><img src="/assets/LomejaneBabao.jpg" alt=""></div> --}}
                   <div class="xmainText">
                       <h3>Lomejane Babao</h3>
                       <p>Team Lead, Fullstack Web Dev</p>
