@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+#login {
+    height: 80vh;
+    width: 100vw;
+    background-color: #fff;
+    /* border-bottom: solid 1px black; */
+    /* background-image: url(/assets/subscribe2.jpg); */
+    /* background-color: #368D96; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.card {
+  border: #368D96 solid 1px;
+}
+
+div.card-header {
+  font-size: 25px;
+  border: #368D96 solid 1px;
+}
+/* .container {
+  padding: 20%;
+} */

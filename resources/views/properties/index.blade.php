@@ -45,7 +45,7 @@
       @csrf
       <p class="row xbg-success p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center">
       
-        <select class="btn bg-light" name="province" id="province" value="province" onchange =`href="/filterprovince/"` style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+        <select class="btn" name="province" id="province" value="province" onchange =`href="/filterprovince/"` style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; background-color: #368D96; color:#000 border-radius: 8px">
         <option value="">Select Province</option>
         @foreach($province as $item)
           <option value="{{($item->province_id)}}">{{(Str::title($item->province_description))}}</option>
@@ -53,22 +53,23 @@
           {{-- {{(Str::title($item->province_description))}} --}}
         @endforeach;
       </select>
-      <select class="btn bg-light" name="citymun" id="citymun" value="citymun" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px">
+      <select class="btn" name="citymun" id="citymun" value="citymun" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; background-color: #368D96; color: #000; border-radius:8px;">
         <option value="">Select City/Municipality</option>
         @foreach($citymunicipality as $item)
           {{-- <option value="CEBU CITY">{{(Str::title($item->city_mun_description))}}</option> --}}
           <option type="text" value={{($item->city_mun_id)}}>{{(Str::title($item->city_mun_description))}}</option>
         @endforeach;
       </select>
-      <select class="btn bg-light" name="price" id="price" value="price" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+      <select class="btn" name="price" id="price" value="price" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; background-color: #368D96;color:#000; border-radius:8px">
         <option value="">Select Price Range</option>
         <option value="20,000,000.00">20,000,000.00 and above</option>
         <option value="10,000,000.00">10,000,000.00 - 19,999,999.99</option>
         <option value="9,999,999.99">9,999,999.99 and below</option>
       </select>
-      <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:skyblue; color: blue; transform:scale(1:1.03)" ><b>Submit</b></button>
+      <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border-radius: 8px; background-color:#10202b; color: #fff; transform:scale(1:1.03)" ><b>Submit</b></button>
 
-        <a class="btn filterButtonReset" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:#FE9C8F; texts-decoration: none; color:red" href="/properties"><b>Reset</b></a>
+
+      <a class="btn filterButtonReset" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: border-radius: 8px;  background-color: #FAD9C1; texts-decoration: none;" href="/properties"><b>Reset</b></a>
       
       </p>
     </form>
@@ -91,7 +92,7 @@
                     </div>
                     <div Class="card-footer" style="height: auto">
                         <!-- Button trigger modal -->
-                        <button type="button" class="pl-2 pr-2 w-50 button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:floralwhite; background-color:black; border-radius: 10px " >
+                        <button type="button" class="pl-2 pr-2 w-50 button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:floralwhite; background-color:  #10202B; border-radius: 8px " >
                         <b>DETAILS</b>
                         </Button>
                     </div>

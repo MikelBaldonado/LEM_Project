@@ -98,11 +98,11 @@ body{
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
     /* transition: 0.3s ease-in; */
     cursor: pointer;
-    background-color: rgba(5, 50, 255, 0.945);
+    background-color: #368D96;
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.03);
     transform-origin: center;
-    transition-delay: 0.4s;
+    transition-delay: 0.1s;
     transition: all 1s;
     z-index: 5;
   }
@@ -114,7 +114,7 @@ body{
   .card-header{
     text-align:"center";
     height:75px;
-    color: lightslategrey;
+    color: #000;
   }
   .card-body{
     padding-top: 2px;
@@ -130,7 +130,7 @@ body{
     transition:all 1s;
   }
   .cardButton{
-    border-radius:10px;
+    border-radius:8px;
     background-color: #ccc;
     color: black;
   }
@@ -155,7 +155,7 @@ body{
     margin-right: 5px;
     border-radius: 5px;
     color: black;
-    background-color: #FE9C8F;
+    /* background-color: #FE9C8F; */
     z-index: 10;
     
   }
@@ -165,7 +165,7 @@ body{
     color: black;
   }
   .filterButtonTop:hover {
-    background-color: rgba(5, 50, 255, 0.945);
+    /* background-color: rgba(5, 50, 255, 0.945); */
     color: white;
   }
   .filterButtonSubmit:hover {
@@ -204,7 +204,7 @@ body{
   }
   
   .filterButtonsVertical button:hover {
-    background-color: navy; /* Navy blue background on mouse-over */
+    background-color: #368D96; /* Navy blue background on mouse-over */
     color: white;
     transition-delay: 0.4s;
     transition:all 1s;
@@ -216,8 +216,11 @@ body{
     color: white;
   }
   .filterButtonsVertical button.active:hover {
-    background-color: navy; /* Add a green color to the "active/current" link */
+    /* background-color: navy; Add a green color to the "active/current" link */
     color: white;
+  }
+  div.card-footer button {
+    background-color:#368D96 ;
   }
   @media only screen and (max-width: 1300px) {
     .propertiesList {
