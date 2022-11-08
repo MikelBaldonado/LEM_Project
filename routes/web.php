@@ -22,7 +22,8 @@ Route::get('/about', 'App\Http\Controllers\PageController@about');
 Route::get('/contact', 'App\Http\Controllers\PageController@contact');
 Route::get('/pricing', 'App\Http\Controllers\PageController@pricing');
 
-
+// HomeProperties
+Route::get('/homeproperties', 'App\Http\Controllers\HomePropertiesController@index');
 
 Route::resource('properties', 'App\Http\Controllers\PropertiesController');
 // Route::resource('propertiesShow', 'App\Http\Controllers\PropertiesController');

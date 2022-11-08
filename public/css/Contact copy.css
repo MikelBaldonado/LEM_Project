@@ -4,15 +4,42 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+#background {
+  height: 35vh;
+  width: auto;
+  background-image: url(/assets/cont.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.d_contact {
+border: #368D96 solid 3px;
+}
+
+.text-in {
+  padding: 20px;
+}
+.text-in span img{
+  width: 3rem;
+}
+.dropdown a {
+text-decoration: none;
+color: #368D96;
+}
+
+.dropdown a:hover {
+  color: #000;
+}
 #contact {
   max-height: 150vh;
   width: 100vw;
   font-family: 'Poppins', sans-serif;
 }
-.row {
-  min-width: 100vw;
+/* .row {
+  width: 100vw;
   height: 90vh;
-}
+} */
 input {
   border: solid #368D96 1px;
 }
@@ -78,9 +105,12 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) { 
 /* Styles */
 #contact {
-  height: 105vh;
+  height: 90vh;
   width: 100vw;
 }
+
+
+
 div.col-md-4.first{
   /* background-image: url(/assets/for_buy.jpg); */
   background-position: center;
@@ -123,9 +153,23 @@ button.btn {
 and (max-width : 375px) {
 /* Styles */
 #contact {
-  min-height: 260vh;
+  min-height: 270vh;
   width: 100vw;
 }
+#background {
+  height: 30vh;
+  width: auto;
+  background-image: url(/assets/cont.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #368D96;
+  word-wrap: break-all;
+   }
 div.col-md-4.first{
   /* background-image: url(/assets/for_buy.jpg); */
   background-position: center;
@@ -148,7 +192,7 @@ button.btn {
 and (width : 412px) {
 /* Styles */
 #contact {
-  min-height: 220vh;
+  min-height: 180vh;
   width: 100vw;
 }
 }
@@ -196,6 +240,14 @@ div.col-md-4.first{
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
+#background {
+  height: 50vh;
+  width: auto;
+  background-image: url(/assets/cont.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }
 
 

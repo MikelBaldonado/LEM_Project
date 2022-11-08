@@ -176,6 +176,10 @@ class PageController extends Controller
         return view('pricing.index');
     }
 
+    // public function HomeProperties(){
+    //     return view('HomeProperties.index');
+    // }
+
    
    
 }

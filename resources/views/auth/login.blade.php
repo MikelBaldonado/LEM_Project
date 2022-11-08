@@ -1,4 +1,4 @@
-<title>Login</title>
+<title>Login as ADMIN</title>
 <link href="{{asset('css/login.css')}}" rel="stylesheet">
 @extends('layouts.app')
 
@@ -9,7 +9,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Login') }}</div>
+                    <div class="card-header">{{ __('Login') }} as Admin</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">

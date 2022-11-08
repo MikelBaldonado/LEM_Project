@@ -8,10 +8,9 @@
           min-height: 65vh;
           background-color: #09141d;">
             <div class="container">
-              <!-- Stack the columns on mobile by making one full-width and the other half-width -->
               <div class="row d-flex flex-row flex-wrap">
                 <div class="col-md-6 d-flex justify-content-center">
-                  <div class="card" style="padding-top:60px; height: 450px;
+                  <div class="border" style="padding-top:60px; height: 450px;
                   width: 500px; background-color:#09141d">
                     <h3 style="  font-size: 46px; color: #fff; font-family: 'Poppins', sans-serif;">
                     The best platform <br>to Buy and Sell properties</h3> <br>
@@ -24,9 +23,9 @@
               
                 <div class="col-md-6 d-flex justify-content-center" style="max-height: 450px;
                 -max-width: 600px;">
-                  <div class="card" style=background-color:#09141d>
+                  <div class="border" style=background-color:#09141d>
                     <img style=" margin-top: 3%;
-                    height: auto;
+                    height: 300px;
                     width: 600x;
                     border: solid black 3px;
                     border-top-left-radius: 190%;
@@ -40,7 +39,7 @@
         {{-- SEARCH FILTER --}}
 
         <section class="Search-Filter" style="min-height: 15vh; padding: 30px; background-color: #368D96;">
-          {{-- <div class="container">
+          <div class="container">
             <div class="row">
               <div class="col mb-2 d-flex justify-content-center">
                 <div class="input-group mb-3">
@@ -81,71 +80,16 @@
               <div class="col" style="padding: 7px;">
                 <button class="btn btn-dark btn-lg" style="padding-bottom: 10px;">Search</button>
               </div>
-            </div>    
-          </div> --}}
+            </div>  
+            <input type="text" class="form-control w-75 shadow" name="" id="" placeholder="Search...." style="border:#368D96 solid 1px;">  
+          </div> 
+        </section>
           {{-- Updated --}}
 
-          <form action="/searchhomeproperties" method="get" enctype="multipart/form-data" class="xbg-warning">
-            @csrf
-            <p class="row xbg-success p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center">
-            
-              <select class="btn" name="province" id="province" value="province" onchange =`href="/filterprovince/"` style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px;background-color:#10202B; color: #fff;  border-radius:8px">
-              <option value="">Select Province</option>
-              @foreach($province as $item)
-                <option value="{{($item->province_id)}}">{{(Str::title($item->province_description))}}</option>
-                {{-- <option value={{($item->province_description)}}>{{(Str::title($item->province_description))}}</option> --}}
-                {{-- {{(Str::title($item->province_description))}} --}}
-              @endforeach;
-            </select>
-
-            <select class="btn" name="price" id="price" value="price" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; background-color:#10202B; color: #fff; border-radius:8px;">
-              <option value="">Select Price Range</option>
-              <option value="">Select Price Range</option>
-              <option value="20,000,000.00">20,000,000.00 and above</option>
-              <option value="10,000,000.00">10,000,000.00 - 19,999,999.99</option>
-              <option value="9,999,999.99">9,999,999.99 and below</option>
-            </select>
-            
-            <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px;  border-radius: 8px; background-color:#10202b; color: #fff;" ><b>Submit</b></button>
-
-            <a class="btn filterButtonReset" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border-radius: 8px;  background-color: #FAD9C1; texts-decoration: none;  color: #000;" href="/"><b>Reset</b></a>
-          </form>
-
-        </section>
-        <section id="discover d-flex justify-content-center" style="background-color: #FAD9C1">
-          <br><br>
+        
+          <section id="RegionProperties"> 
           <h3 class="text-center">All Over The Philippines</h3>
-          <br> 
-          <br>
-          <div class="container">
-            {{-- <div class="row">
-              <div class="col mb-2 d-flex justify-content-center">
-                <div class="card shadow" style="width: 20rem;">
-                  <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                    <h6>Location: 123 Riza St. Dumaguete City</h6>
-                    <h6>No. of Bedrooms: 2 Only</h6>
-                    <h6>Price: ₱ 10,000 Monthly </h6>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-2 d-flex justify-content-center">
-                <div class="card shadow" style="width: 20rem;">
-                  <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                    <h6>Location: 123 Riza St. Dumaguete City</h6>
-                    <h6>No. of Bedrooms: 2 Only</h6>
-                    <h6>Price: ₱ 10,000 Monthly </h6>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                  </div>
-                </div>
-              </div>
-
+            <div class="row">
               <div class="col mb-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 20rem;">
                   <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
@@ -160,111 +104,11 @@
                 </div>
               </div>
             </div>
-            <br> <br> 
-              <div class="container">
-                <div class="row">
-                  <div class="col mb-2 d-flex justify-content-center">
-                    <div class="card shadow" style="width: 20rem;">
-                      <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                        <h6>Location: 123 Riza St. Dumaguete City</h6>
-                        <h6>No. of Bedrooms: 2 Only</h6>
-                        <h6>Price: ₱ 10,000 Monthly </h6>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mb-2 d-flex justify-content-center">
-                    <div class="card shadow" style="width: 20rem;">
-                      <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                        <h6>Location: 123 Riza St. Dumaguete City</h6>
-                        <h6>No. of Bedrooms: 2 Only</h6>
-                        <h6>Price: ₱ 10,000 Monthly </h6>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="col mb-2 d-flex justify-content-center">
-                    <div class="card shadow" style="width: 20rem;">
-                      <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                        <h6>Location: 123 Riza St. Dumaguete City</h6>
-                        <h6>No. of Bedrooms: 2 Only</h6>
-                        <h6>Price: ₱ 10,000 Monthly </h6>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                      </div>
-                    </div>
-                  </div>
-                </div> --}}
-            {{--  --}}
-
-            <div Class="propertiesList " >
-              @foreach ($properties as $item)
-                  <div Class="propertiesItem">
-                    <div class="" style="background-image: url({{'Image/'. $item->images}})"> 
-                    {{-- <img src="{{'Image/'. $item->images}}" Class="w-100" style="size:vmax">                       {{$item->property_image_id}} --}}
-                   </div>
-                      <div Class="card-body">
-                          <h3 style="height:65px">{{$item->property_title}}</h3>
-                          <p>Price:{{number_format($item->property_price, 2)}}</p>
-                          {{-- {Number(Item.price).toLocaleString('en-US')} --}}
-                          <p>Location: {{$item->city_mun_description}}, {{$item->province_description}}</p>
-                          {{-- <p>Details: {{$item->property_description}}</p> --}}
-                          <br>
-                      </div>
-                      <div Class="card-footer" style="height: auto">
-                          <!-- Button trigger modal -->
-                          <button type="button" class="pl-2 pr-2 w-50 button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:floralwhite; background-color: #10202B; border-radius: 8px " >
-                          <b>DETAILS</b>
-                          </Button>
-                      </div>
-                  </div>
-                <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel"><b>{{$item->property_title}}</b></h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="size:fit-content">
-                          <div Class="modalBody">
-                            <div class="container" style="background-image: url({{'Image/'. $item->images}}); height: 325px; width:300px"> 
-                            {{-- <img src="url({{'Image/' . $item->images}})" Class="w-100" style="size:vmax; border-radius:5px">                       {{$item->property_image_id}} --}}
-                           </div>
-                           <br>
-                            <div Class="" style="font-size: 14pt" style="height: 325px; width:300px">
-                                {{-- <h3 style="height:60px">{{$item->property_title}}</h3> --}}
-                                <h3 style="height:60px">Ref. No.: {{$item->property_id}}</h3>
-                                <p>Price:{{number_format($item->property_price, 2)}}</p>
-                                <p>Location: {{$item->city_mun_description}}, {{$item->province_description}}</p>
-                                <p>  {{$item->property_description}}</p>
-                                
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="submit" class="btn btn-primary" href="/contact">Inquire</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>  
-  
-              @endforeach
-            </div>
+           </section>    
+          {{--  --}}
           {{--  --}}
           </div>
           <br>
-        </section>
         <section id="Grid-Places" style="  min-height: 50vh;">
           <br> <br>
           <div class="container">
@@ -333,7 +177,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
                   <div class="grid-item2">
@@ -342,7 +186,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
                   <div class="grid-item2">
@@ -351,7 +195,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
               </div> <br> <br>
@@ -363,7 +207,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
                   <div class="grid-item2">
@@ -372,7 +216,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                            <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
 
                       </div>
                   </div>
@@ -382,7 +226,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
               </div> 
@@ -392,7 +236,7 @@
           <div class=" row recent-image d-flex flex-row justify-content-center align-items-center ">
             {{--    --}}
              {{-- <img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image "> --}}
-            <h3 style="display:flex; justify-content:start" ><img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image">  Recent Listing</h3>
+            {{-- <h3 style="display:flex; justify-content:start" ><img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image">Recent Listing</h3> --}}
         </div>
         <div class="container " style="margin-left:auto; margin-right:auto" > 
           {{-- d-flex justify-content-around align-contents-center text-align-center align-items-center --}}
@@ -407,7 +251,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -420,7 +264,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -433,7 +277,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -446,7 +290,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -459,7 +303,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -472,7 +316,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -485,7 +329,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>

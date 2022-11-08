@@ -23,13 +23,14 @@
     <script src="{{secure_asset('build/assets/app.css')}}"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     {{-- Links and scripts from here up to the next marker above are added by Enerio: --}}
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-{{-- <body style="background-color: #FAD9C1"> --}}
-  <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #10202b;">
+
+  <nav class="navbar sticky-top navbar-expand-lg shadow" style="background-color: #10202b;">
     <div class="container-fluid text-white">
       <a class="navbar-brand" href="/">
         <img src="/assets/1.png" alt="Company Logo" width="120px">
@@ -126,10 +127,10 @@
       <div class="col-md-4 xbg-warning" style="width: x15vw;">
         <ul class="nav flex-column">
           <h4>Explore</h4>
-          <li class="nav-item mb-2"><a href="">Home</a></li>
-          <li class="nav-item mb-2"><a href="">Properties</a></li>
-          <li class="nav-item mb-2"><a href="">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="">Sign Up</a></li>
+          <li class="nav-item mb-2"><a href="/">Home</a></li>
+          <li class="nav-item mb-2"><a href="/properties">Properties</a></li>
+          <li class="nav-item mb-2"><a href="/pricing">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="/register">Sign Up</a></li>
         </ul>
       </div>
 
@@ -146,10 +147,10 @@
       <div class="col-md-4 xbg-secondary"style="width: x15vw;">
         <ul class="nav flex-column">
           <h5>Follow Us</h5>
-          <li class="nav-item mb-2"><a href="">Youtube</a></li>
-          <li class="nav-item mb-2"><a href="">Instagram</a></li>
-          <li class="nav-item mb-2"><a href="">Facebook</a></li>
-          <li class="nav-item mb-2"><a href="">Twitter</a></li>
+          <li class="nav-item mb-2"><a href=""><i class="ri-youtube-fill"></i>Youtube</a></li>
+          <li class="nav-item mb-2"><a href=""><i class="ri-instagram-fill"></i>Instagram</a></li>
+          <li class="nav-item mb-2"><a href=""><i class="ri-facebook-circle-fill"></i>Facebook</a></li>
+          <li class="nav-item mb-2"><a href=""><i class="ri-twitter-fill"></i>Twitter</a></li>
         </ul>
       </div>
         </div>
@@ -162,7 +163,7 @@
           <form>
             {{-- <h5>Subscribe to our newsletter</h5>
             <p>We'll provide recent updates on property listings, promotions, sales and more.</p> --}}
-            <input type="text" class="form-control w-100" name="email" placeholder="Email">
+            <input type="text" class="form-control w-100 shadow" name="email" placeholder="Email">
             <br>
             {{-- <button  class="btn btn-dark btn-lg w-100" type="submit">Subscribe</button> --}}
             <button type="button" class="btn-lg w-100" style="font-family:'Poppins', sans-serif; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Subscribe</button>

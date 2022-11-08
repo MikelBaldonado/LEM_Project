@@ -17,7 +17,7 @@ class MailController extends Controller
         if(isset($_POST['sendmail'])){
           $name = $_POST['name'];    
           $emailSender = $_POST['email'];
-          $email_id = 'rainejvaine@gmail.com';
+          $email_id = 'lomejanebabao37@gmail.com';
           $subject = $_POST['subject'];
           $message = $_POST['msg'];
          
