@@ -40,49 +40,7 @@
         {{-- SEARCH FILTER --}}
 
         <section class="Search-Filter" style="min-height: 15vh; padding: 30px; background-color: #368D96;">
-          {{-- <div class="container">
-            <div class="row">
-              <div class="col mb-2 d-flex justify-content-center">
-                <div class="input-group mb-3">
-                  <label class="input-group-text" for="inputGroupSelect01" style="height: 4rem; min-width: 6rem; font-size: 1.2rem;">Location</label>
-                  <select class="form-select" id="inputGroupSelect01" style="font-size: 1.2rem;">
-                    <option selected>Select..</option>
-                    <option value="1">Luzon</option>
-                    <option value="2">Visayas</option>
-                    <option value="3">Mindanao</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col mb-2 d-flex justify-content-center">
-                <div class="input-group mb-3">
-                  <label class="input-group-text" for="inputGroupSelect01" style="height: 4rem; font-size: 1.2rem;">Property:</label>
-                  <select class="form-select" id="inputGroupSelect01" style="font-size: 1.2rem;">
-                    <option selected>Type...</option>
-                    <option value="1">Apartment</option>
-                    <option value="2">Condominium</option>
-                    <option value="3">House and Lot</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col mb-2 d-flex justify-content-center">
-                <div class="input-group mb-3">
-                  <label class="input-group-text" for="inputGroupSelect01" style="height: 4rem; font-size: 1.2rem;">Estimated</label>
-                  <select class="form-select" id="inputGroupSelect01" style="font-size: 1.2rem;">
-                   <option selected>Price...</option>
-                    <option value="1">1-5M</option>
-                    <option value="2">6-10M</option>
-                    <option value="3">11M and up</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col" style="padding: 7px;">
-                <button class="btn btn-dark btn-lg" style="padding-bottom: 10px;">Search</button>
-              </div>
-            </div>    
-          </div> --}}
+        
           {{-- Updated --}}
 
           <form action="/searchhomeproperties" method="get" enctype="multipart/form-data" class="xbg-warning">
@@ -93,19 +51,29 @@
               <option value="">Select Province</option>
               @foreach($province as $item)
                 <option value="{{($item->province_id)}}">{{(Str::title($item->province_description))}}</option>
-                {{-- <option value={{($item->province_description)}}>{{(Str::title($item->province_description))}}</option> --}}
-                {{-- {{(Str::title($item->province_description))}} --}}
               @endforeach;
             </select>
 
-            <select class="btn bg-light" name="price" id="price" value="price" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+            <script>
+              var selectprovince = document.getElementById('province');
+              selectprovince.onchange = function(){
+              this.form.submit();
+              };
+            </script>
+
+            <select class="btn bg-light" name="price" id="price" value="price" type="number" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
               <option value="">Select Price Range</option>
-              <option value="20,000,000.00">20,000,000.00 and above</option>
-              <option value="10,000,000.00">10,000,000.00 - 19,999,999.99</option>
-              <option value="9,999,999.99">9,999,999.99 and below</option>
+              <option value="20000000">20,000,000.00 and above</option>
+              <option value="10000000">10,000,000.00 - 19,999,999.99</option>
+              <option value="9999999">9,999,999.99 and below</option>
             </select>
-            
-            <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:skyblue; color: blue; transform:scale(1:1.03)" ><b>Submit</b></button>
+            <script>
+              var selectprice = document.getElementById('price');
+              selectprice.onchange = function(){
+              this.form.submit();
+              };
+            </script>
+            {{-- <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:skyblue; color: blue; transform:scale(1:1.03)" ><b>Submit</b></button> --}}
 
              <a class="btn filterButtonReset" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:#FE9C8F; texts-decoration: none; color:red" href="/"><b>Reset</b></a>
           </form>
@@ -226,6 +194,9 @@
                           </Button>
                       </div>
                   </div>
+                  @endforeach
+
+                  @foreach($properties as $item)
                 <!-- Modal -->
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">

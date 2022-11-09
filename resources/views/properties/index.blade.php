@@ -1,34 +1,3 @@
-{{-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title> --}}
-    {{-- <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-    crossorigin="anonymous"
-    /> --}}
-    {{-- <link rel="stylesheet" 
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-    crossorigin="anonymous"> --}}
-    {{-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> --}}
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> --}}
-    {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> --}}
-    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --}}
-    {{-- <link  href="{{asset('build/assets/app.css')}}" rel="stylesheet">
-    <link href="{{secure_asset('build/assets/app.css')}}" rel="stylesheet"> --}}
-    {{-- <link href="{{secure_asset('build/assets/properties.css')}}" rel="stylesheet"> --}}
-    {{-- <link href="{{asset('css/properties.css')}}" rel="stylesheet">
-
-    <script src="{{secure_asset('build/assets/app.css')}}"></script> --}}
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> --}}
-{{-- </head>
-</head> --}}
-
 
 @extends ('layouts.app')
 
@@ -45,28 +14,47 @@
       @csrf
       <p class="row xbg-success p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center">
       
-        <select class="btn bg-light" name="province" id="province" value="province" onchange =`href="/filterprovince/"` style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
-        <option value="">Select Province</option>
+        <select class="btn bg-light" name="province" id="province" value="province" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+        <option value="">By Province</option>
         @foreach($province as $item)
           <option value="{{($item->province_id)}}">{{(Str::title($item->province_description))}}</option>
-          {{-- <option value={{($item->province_description)}}>{{(Str::title($item->province_description))}}</option> --}}
-          {{-- {{(Str::title($item->province_description))}} --}}
         @endforeach;
       </select>
-      <select class="btn bg-light" name="citymun" id="citymun" value="citymun" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px">
-        <option value="">Select City/Municipality</option>
+      <script>
+      var selectprovince = document.getElementById('province');
+      selectprovince.onchange = function(){
+        this.form.submit();
+      };
+
+      </script>
+
+      <select class="btn bg-light"  name="citymun" id="citymun" value="citymun" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px">
+        <option value="">By City/Municipality</option>
         @foreach($citymunicipality as $item)
-          {{-- <option value="CEBU CITY">{{(Str::title($item->city_mun_description))}}</option> --}}
           <option type="text" value={{($item->city_mun_id)}}>{{(Str::title($item->city_mun_description))}}</option>
         @endforeach;
       </select>
+      <script>
+        var selectcitynum = document.getElementById('citymun');
+        selectcitynum.onchange = function(){
+          this.form.submit();
+        };
+      </script>
+
       <select class="btn bg-light" name="price" id="price" value="price" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
-        <option value="">Select Price Range</option>
-        <option value="20,000,000.00">20,000,000.00 and above</option>
-        <option value="10,000,000.00">10,000,000.00 - 19,999,999.99</option>
-        <option value="9,999,999.99">9,999,999.99 and below</option>
+        <option value="">By Price Range</option>
+        <option value="20000000">20,000,000.00 and above</option>
+        <option value="10000000">10,000,000.00 - 19,999,999.99</option>
+        <option value="9999999">9,999,999.99 and below</option>
       </select>
-      <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:skyblue; color: blue; transform:scale(1:1.03)" ><b>Submit</b></button>
+      <script>
+        var selectprice = document.getElementById('price');
+        selectprice.onchange = function(){
+          this.form.submit();
+        }
+      </script>
+
+      {{-- <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:skyblue; color: blue; transform:scale(1:1.03)" ><b>Submit</b></button> --}}
 
         <a class="btn filterButtonReset" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:#FE9C8F; texts-decoration: none; color:red" href="/properties"><b>Reset</b></a>
       
