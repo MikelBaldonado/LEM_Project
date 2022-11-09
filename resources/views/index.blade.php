@@ -10,7 +10,7 @@
             <div class="container">
               <div class="row d-flex flex-row flex-wrap">
                 <div class="col-md-6 d-flex justify-content-center">
-                  <div class="border" style="padding-top:60px; height: 450px;
+                  <div class="card" style="padding-top:60px; height: 450px;
                   width: 500px; background-color:#09141d">
                     <h3 style="  font-size: 46px; color: #fff; font-family: 'Poppins', sans-serif;">
                     The best platform <br>to Buy and Sell properties</h3> <br>
@@ -23,9 +23,9 @@
               
                 <div class="col-md-6 d-flex justify-content-center" style="max-height: 450px;
                 -max-width: 600px;">
-                  <div class="border" style=background-color:#09141d>
+                  <div class="card" style=background-color:#09141d>
                     <img style=" margin-top: 3%;
-                    height: 300px;
+                    height: auto;
                     width: 600x;
                     border: solid black 3px;
                     border-top-left-radius: 190%;
