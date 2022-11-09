@@ -1,3 +1,5 @@
+<title>Create New Record</title>
+<link href="{{asset('css/createowner.css')}}" rel="stylesheet">
 @extends('layouts.navbar')
 @section('content')
 
@@ -14,14 +16,14 @@
             <div class="modal-body"> --}}
                 <form action="/agents" method='post'>
                     {!! csrf_field() !!}
-                    <input type="text" placeholder="Full Name" class="form-control" name="fullname">
+                    <input type="text" placeholder="Full Name" class="form-control shadow" name="fullname" style="border:#368D96 solid 1px;">
                     <br>
-                    <input type="text" placeholder="Address" class="form-control" name="address">
+                    <input type="text" placeholder="Address" class="form-control shadow" name="address" style="border:#368D96 solid 1px;">
                     <br>
-                    <input type="text" placeholder="Contact Number" class="form-control" name="contact">
+                    <input type="text" placeholder="Contact Number" class="form-control shadow" name="contact" style="border:#368D96 solid 1px;">
                     <br>
                     
-                    <input type="submit" class="btn btn-primary" value="Save">
+                    <input type="submit" class="btn" value="Save">
                 </form>
             {{-- </div>
             <div class="modal-footer">

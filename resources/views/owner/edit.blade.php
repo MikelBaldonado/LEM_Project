@@ -16,15 +16,16 @@
                     {!! csrf_field() !!}
                     @method('PATCH')
                     <input type="hidden" class='form-control' name = "id" value="{{$owner->id}}">
-                    <input type="text" placeholder="Full Name" class="form-control" name="fullname" value="{{$owner->fullname}}">
+                    <input type="text" placeholder="Full Name" class="form-control shadow" style="border:#368D96 solid 1px;"name="fullname" value="{{$owner->fullname}}">
                     <br>
-                    <input type="text" placeholder="Address" class="form-control" name="address" value="{{$owner->address}}">
+                    <input type="text" placeholder="Address" class="form-control shadow" style="border:#368D96 solid 1px;"name="address" value="{{$owner->address}}">
                     <br>
-                    <input type="text" placeholder="Contact Number" class="form-control" name="contact" value="{{$owner->contact}}">
+                    <input type="text" placeholder="Contact Number" class="form-control shadow" style="border:#368D96 solid 1px;" name="contact" value="{{$owner->contact}}">
                     <br>
                    
                     <input type="submit" class="btn btn-primary" value="Update">
                 </form>
+           
             {{-- </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

@@ -20,7 +20,7 @@
         <td>{{$item->property_description}}</td>
         <td>{{$item->property_price}}</td>
         <td>{{$item->province_id}}</td>
-        <td>{{$item->citymun_id}}</td>
+        <td>{{$item->city_mun_id}}</td>
         <td>{{$item->floor_area}}</td>
         <td>{{$item->lot_area}}</td>
         <td>
