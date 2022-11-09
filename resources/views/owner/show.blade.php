@@ -19,7 +19,7 @@
 
             </div>
             <div class="p-2">
-                <input type="text" class="form-control" placeholder="Search...">
+                <input type="text" class="form-control shadow" placeholder="Search..." style="border:#368D96 solid 1px;">
             </div>
         </div>
 

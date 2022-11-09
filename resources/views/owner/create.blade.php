@@ -1,7 +1,9 @@
+<title>Register</title>
+<link href="{{asset('css/createowner.css')}}" rel="stylesheet">
 @extends('layouts.navbar')
 @section('content')
 
-<section>
+<section id="create">
     <h1>Create New Record</h1>
     <!-- Modal -->
     {{-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -14,14 +16,14 @@
             <div class="modal-body"> --}}
                 <form action="/owner" method='post'>
                     {!! csrf_field() !!}
-                    <input type="text" placeholder="Full Name" class="form-control" name="fullname">
+                    <input type="text" placeholder="Full Name" class="form-control shadow" placeholder="Name" style="border:#368D96 solid 1px;" name="fullname">
                     <br>
-                    <input type="text" placeholder="Address" class="form-control" name="address">
+                    <input type="text" placeholder="Address" class="form-control shadow" placeholder="Name" style="border:#368D96 solid 1px;" name="address">
                     <br>
-                    <input type="text" placeholder="Contact Number" class="form-control" name="contact">
+                    <input type="text" placeholder="Contact Number" class="form-control shadow" placeholder="Name" style="border:#368D96 solid 1px;" name="contact">
                     <br>
                     
-                    <input type="submit" class="btn btn-primary" value="Save">
+                    <input type="submit" class="btn" value="Save">
                 </form>
             {{-- </div>
             <div class="modal-footer">

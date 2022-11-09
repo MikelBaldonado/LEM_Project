@@ -8,25 +8,24 @@
           min-height: 65vh;
           background-color: #09141d;">
             <div class="container">
-              <!-- Stack the columns on mobile by making one full-width and the other half-width -->
               <div class="row d-flex flex-row flex-wrap">
                 <div class="col-md-6 d-flex justify-content-center">
-                  <div class="card" style="padding-top:60px; height: 450px;
+                  <div class="border" style="padding-top:60px; height: 450px;
                   width: 500px; background-color:#09141d">
                     <h3 style="  font-size: 46px; color: #fff; font-family: 'Poppins', sans-serif;">
                     The best platform <br>to Buy and Sell properties</h3> <br>
                     <p style="font-size: 25px; color: white; font-family: 'Roboto Condensed', sans-serif;">
                     See properties that might <br> pique your interests</p>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width:10rem; height: 3rem; background-color:#368D96; border:none; border-radius: 8px; text-style: none;"> <a href="#Grid-Places">Explore</a></button>
+                    <button type="button" class="btn-lg-explore" style="font-family:'Poppins', sans-serif; width:10rem; height: 3rem; background-color:#368D96; border:none; border-radius: 8px;"> <a href="#Grid-Places">Explore</a></button>
                    
                   </div>   
                 </div>
               
                 <div class="col-md-6 d-flex justify-content-center" style="max-height: 450px;
                 -max-width: 600px;">
-                  <div class="card" style=background-color:#09141d>
+                  <div class="border" style=background-color:#09141d>
                     <img style=" margin-top: 3%;
-                    height: auto;
+                    height: 300px;
                     width: 600x;
                     border: solid black 3px;
                     border-top-left-radius: 190%;
@@ -47,7 +46,7 @@
             @csrf
             <p class="row xbg-success p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center">
             
-              <select class="btn bg-light" name="province" id="province" value="province" onchange =`href="/filterprovince/"` style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+              <select class="btn bg-light" name="province" id="province" value="province"  style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
               <option value="">Select Province</option>
               @foreach($province as $item)
                 <option value="{{($item->province_id)}}">{{(Str::title($item->province_description))}}</option>
@@ -82,37 +81,7 @@
         <section id="discover d-flex justify-content-center" style="background-color: #FAD9C1">
           <br><br>
           <h3 class="text-center">All Over The Philippines</h3>
-          <br> 
-          <br>
-          <div class="container">
             {{-- <div class="row">
-              <div class="col mb-2 d-flex justify-content-center">
-                <div class="card shadow" style="width: 20rem;">
-                  <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                    <h6>Location: 123 Riza St. Dumaguete City</h6>
-                    <h6>No. of Bedrooms: 2 Only</h6>
-                    <h6>Price: ₱ 10,000 Monthly </h6>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-2 d-flex justify-content-center">
-                <div class="card shadow" style="width: 20rem;">
-                  <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                    <h6>Location: 123 Riza St. Dumaguete City</h6>
-                    <h6>No. of Bedrooms: 2 Only</h6>
-                    <h6>Price: ₱ 10,000 Monthly </h6>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                  </div>
-                </div>
-              </div>
-
               <div class="col mb-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 20rem;">
                   <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
@@ -234,7 +203,6 @@
           {{--  --}}
           </div>
           <br>
-        </section>
         <section id="Grid-Places" style="  min-height: 50vh;">
           <br> <br>
           <div class="container">
@@ -303,7 +271,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
                   <div class="grid-item2">
@@ -312,7 +280,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
                   <div class="grid-item2">
@@ -321,7 +289,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
               </div> <br> <br>
@@ -333,7 +301,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
                   <div class="grid-item2">
@@ -342,7 +310,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                            <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
 
                       </div>
                   </div>
@@ -352,7 +320,7 @@
                           <p>123BZ Rizal St. Makati City</p>
                           <p>3 Storey House with 5 bedrooms</p>
                           <p>15,000 to 20,000 per month</p>
-                          <button>Buy Now</button>
+                          <button>Inquire</button>
                       </div>
                   </div>
               </div> 
@@ -362,7 +330,7 @@
           <div class=" row recent-image d-flex flex-row justify-content-center align-items-center ">
             {{--    --}}
              {{-- <img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image "> --}}
-            <h3 style="display:flex; justify-content:start" ><img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image">  Recent Listing</h3>
+            {{-- <h3 style="display:flex; justify-content:start" ><img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image">Recent Listing</h3> --}}
         </div>
         <div class="container " style="margin-left:auto; margin-right:auto" > 
           {{-- d-flex justify-content-around align-contents-center text-align-center align-items-center --}}
@@ -377,7 +345,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -390,7 +358,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -403,7 +371,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -416,7 +384,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -429,7 +397,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -442,7 +410,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>
@@ -455,7 +423,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Buy Now</button>
+                      <button class="btn "> Inquire</button>
                     </div>
                 </div>
             </div>

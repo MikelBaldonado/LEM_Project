@@ -1,3 +1,4 @@
+<link href="{{asset('css/register.css')}}" rel="stylesheet">
 @extends('layouts.navbar')
 @section('content')
 
@@ -15,14 +16,14 @@
                 <form action="/citymun/{{$citymun->id}}" method='post'>
                     {!! csrf_field() !!}
                     @method('PATCH')
-                    <input type="hidden" class='form-control' name = "id" value="{{$citymun->id}}">
-                    <input type="text" placeholder="Full Name" class="form-control" name="citymun_description" value="{{$citymun->citymun_description}}">
+                    <input type="hidden" class='form-control shadow' name = "id" value="{{$citymun->id}}"  style="border:#368D96 solid 1px;">
+                    <input type="text" placeholder="Full Name" class="form-control shadow" name="citymun_description" value="{{$citymun->citymun_description}}"  style="border:#368D96 solid 1px;">
                     <br>
                     
                     {{-- <input type="text" placeholder="Contact Number" class="form-control" name="contact" value="{{$owner->contact}}">
                     <br> --}}
                    
-                    <input type="submit" class="btn btn-primary" value="Update">
+                    <input type="submit" class="btn" value="Update">
                 </form>
             {{-- </div>
             <div class="modal-footer">

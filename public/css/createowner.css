@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+
+    /* border-bottom: solid 1px black; */
+    /* background-image: url(/assets/subscribe2.jpg); */
+    /* background-color: #368D96; */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+input.btn {
+    background-color: #368D96;
+    color: #fff;
+    width: 10rem;
+}
+
+a.btn.b {
+    background-color: #10202b;
+    color: #fff;
+    width: 10rem;
+}
+
+input.btn:hover {
+    background-color: #10202b;
+    color: #fff;
+}

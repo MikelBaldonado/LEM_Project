@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\CityMun;
-use App\Models\Province;
-use Illuminate\Support\Facades\DB;
+use App\Models\HomeProperties;
+class HomePropertiesController extends Controller
 
-class CityMunController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,12 +13,12 @@ class CityMunController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        // $province = province::all();
-            
-        $citymun = citymun::orderby('citymun_description', 'asc')->simplePaginate(5);
-        
-        return view('citymun.index')->with('citymun', $citymun);
+    {   
+        $HomeProperties = HomeProperties::orderBy('id', 'desc')->simplePaginate(2);
+          return view('HomeProperties.index')->with('HomeProperties', $HomeProperties);
+        //  $HomeProperties = HomeProperties::all();
+        // return view('HomeProperties.index')->with('HomeProperties', $HomeProperties);
+        // to get all information of HomePRoperties tbl
     }
 
     /**
@@ -30,12 +28,7 @@ class CityMunController extends Controller
      */
     public function create()
     {
-        // $province = province::all();
-        $province = DB::table("province_tbl")
-        ->get();
-
-        // return view('citymun.create');
-        return view('citymun.create')->with('province', $province );
+        return view('HomeProperties.index');
     }
 
     /**
@@ -47,9 +40,8 @@ class CityMunController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        citymun::create($input);
-
-        return redirect('citymun');
+        HomeProperties::create($input);
+        return redirect('HomeProperties.index');
     }
 
     /**
@@ -60,8 +52,8 @@ class CityMunController extends Controller
      */
     public function show($id)
     {
-        $citymun = citymun::all();
-        return view('citymun.index')->with('citymun', $citymun);
+        // $singleHomeProperties = HomeProperties::find($id);
+        // return view('HomeProperties.show')->width('HomeProperties', $singleHomeProperties)
     }
 
     /**
@@ -72,8 +64,7 @@ class CityMunController extends Controller
      */
     public function edit($id)
     {
-        $updateCitymun = citymun::find($id);
-        return view('citymun.edit')->with('citymun', $updateCitymun);
+        //
     }
 
     /**
@@ -85,10 +76,11 @@ class CityMunController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $updateCitymun = citymun::find($id);
-        $input = $request->all();
-        $updateCitymun->update($input);
-        return redirect('citymun');
+        $updateHomeProperties = HomeProperties::find($id);
+        $input = $request->all;
+        $updateHomeProperties->update($input);
+
+        return redirect('HomeProperties');
     }
 
     /**
@@ -99,7 +91,6 @@ class CityMunController extends Controller
      */
     public function destroy($id)
     {
-        citymun::destroy($id);
-        return redirect('citymun');
+        //
     }
 }

@@ -1,3 +1,5 @@
+<title>List Of Owners</title>
+<link href="{{asset('css/createowner.css')}}" rel="stylesheet">
 @extends('layouts.navbar')
 
 @section('content')
@@ -8,9 +10,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{config('app.name','Default Value')}}</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    </head>
+      </head>
     <body>
-
+      
         <div class="d-flex">
             <div class="p-2 flex-grow-1"> <h1>List of Owners</h1></div>
             <div class="p-2">
@@ -21,7 +23,7 @@
                 </a>
             </div>
             <div class="p-2">
-                <input type="text" class="form-control" placeholder="Search...">
+                <input type="text" class="form-control shadow" placeholder="Search..." style="border:#368D96 solid 1px;">
             </div>
         </div>
 
@@ -47,11 +49,11 @@
                       <td>{{$item->address}}</td>
                       <td>{{$item->contact}}</td>
                       <td>
-                          <a href="/owner/{{$item->id}}/edit" class="btn btn-warning" style="width:100px;">Edit</a>
+                          <a href="/owner/{{$item->id}}/edit" class="btn b" style="width:100px;">Edit</a>
                           <form action="/owner/{{$item->id}}" method='post'>
                             {{method_field('DELETE')}}
                             {!! csrf_field() !!}
-                            <input type="submit" value="Delete" class='btn btn-danger' style="width:100px;">
+                            <input type="submit" value="Delete" class='btn' style="width:100px;">
                           </form>
                       </td>
                     </tr>
