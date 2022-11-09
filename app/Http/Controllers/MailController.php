@@ -10,14 +10,15 @@ class MailController extends Controller
     public function sendMail(){
         
         require '../vendor/autoload.php';
-        $API_KEY = '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';
+        $API_KEY = '4GpPGjpCa0U3imYCwCgUfqrS5Dw4Zz684S9oO3aqxdQ=';
+        // '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';
         header("Access-Control-Allow-Origin: *");
         header("Access-Control-Allow-Headers: *");
       
         if(isset($_POST['sendmail'])){
           $name = $_POST['name'];    
           $emailSender = $_POST['email'];
-          $email_id = 'rainejvaine@gmail.com';
+          $email_id = 'enerio.balungcas@gmail.com';
           $subject = $_POST['subject'];
           $message = $_POST['msg'];
          

@@ -7,7 +7,8 @@ return [
     
     'port' => 587,
     
-    'encription ' => 'tls',
+    'encryption ' => 'tls',
+    // 'encription ' => 'tls',
     
     'username' => 'sendGrid_username',
 

@@ -56,7 +56,7 @@
                     <ul class="navbar-nav ms-auto">
 
                       <li class="nav-item">
-                        <a class="nav-link" href="/properties">Properties</a>
+                        <a class="nav-link" href="/createproperties">Properties</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="/owner">Owners</a>
