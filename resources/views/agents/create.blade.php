@@ -4,7 +4,7 @@
 @section('content')
 
 <section>
-    <h1>Create New Record</h1>
+    <h1>Create New Agent Record</h1>
     <!-- Modal -->
     {{-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

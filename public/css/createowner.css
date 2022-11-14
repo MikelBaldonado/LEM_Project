@@ -12,18 +12,26 @@
     background-repeat: no-repeat;
     background-size: cover; */
 input.btn {
-    background-color: #368D96;
+    background-color: #10202b;
+    /* background-color: #368D96 ; */
     color: #fff;
     width: 10rem;
 }
 
 a.btn.b {
-    background-color: #10202b;
+    background-color: #368D96;
+    /* background-color: #10202b; */
+    color: #fff;
+    width: 10rem;
+}
+a.btn.b:hover {
+    background-color: orange;
     color: #fff;
     width: 10rem;
 }
 
 input.btn:hover {
-    background-color: #10202b;
+    background-color: red;
+    /* background-color: #10202b; */
     color: #fff;
 }

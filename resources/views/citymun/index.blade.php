@@ -8,11 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{config('app.name','Default Value')}}</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link href="{{asset('css/createowner.css')}}" rel="stylesheet">
     </head>
     <body>
 
         <div class="d-flex">
-            <div class="p-2 flex-grow-1"> <h1>List of City/Municipality</h1></div>
+            <div class="p-2 flex-grow-1"> <h1>List of Cities/Municipalities</h1></div>
             <div class="p-2">
                 <!-- Button trigger modal -->
                 <a href="/citymun/create" 
@@ -40,24 +41,24 @@
                   @foreach ($citymun as $item )
               
                     <tr>
-                      <td>{{$item->id}}</td>
-                      <td>{{$item->citymun_description}}</td>
+                      <td>{{$item->city_mun_id}}</td>
+                      <td>{{$item->city_mun_description}}</td>
                       <td>
-                          <a href="/citymun/{{$item->id}}/edit" class="btn btn-warning" style="width:100px;">Edit</a>
-                          <form action="/citymun/{{$item->id}}" method='post'>
+                          <a href="/citymun/{{$item->city_mun_id}}/edit" class="btn b" style="width:100px;">Edit</a>
+                          <form action="/citymun/{{$item->city_mun_id}}" method='post'>
                             {{method_field('DELETE')}}
                             {!! csrf_field() !!}
-                            <input type="submit" value="Delete" class='btn btn-danger' style="width:100px;">
+                            <input type="submit" value="Delete" class='btn' style="width:100px;">
                           </form>
                       </td>
                     </tr>
-              
                   @endforeach
-              
-              
                 </tbody>
-              </table>
 
+              </table>
+              <div>
+                {{$citymun->links()}}
+              </div>
         </section>
         
 

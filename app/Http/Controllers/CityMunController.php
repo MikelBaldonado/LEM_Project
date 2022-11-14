@@ -18,7 +18,7 @@ class CityMunController extends Controller
     {
         // $province = province::all();
             
-        $citymun = citymun::orderby('citymun_description', 'asc')->simplePaginate(5);
+        $citymun = CityMun::orderby('city_mun_description', 'asc')->simplePaginate(5);
         
         return view('citymun.index')->with('citymun', $citymun);
     }
@@ -72,7 +72,7 @@ class CityMunController extends Controller
      */
     public function edit($id)
     {
-        $updateCitymun = citymun::find($id);
+        $updateCitymun = CityMun::find($id);
         return view('citymun.edit')->with('citymun', $updateCitymun);
     }
 
@@ -85,7 +85,7 @@ class CityMunController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $updateCitymun = citymun::find($id);
+        $updateCitymun = CityMun::find($id);
         $input = $request->all();
         $updateCitymun->update($input);
         return redirect('citymun');

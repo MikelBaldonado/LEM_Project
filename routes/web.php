@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+Use App\Http\Controllers\ImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,10 +44,17 @@ Route::get('admin/properties', [App\Http\Controllers\PropertiesController::class
 Route::get('searchproperties', [App\Http\Controllers\PropertiesController::class,'search'])->name('properties.search');
 Route::get('filterproperties', [App\Http\Controllers\PropertiesController::class,'filter'])->name('properties.filter');
 
-
-
 // For Email
 Route::post('sendMail','App\Http\Controllers\MailController@sendMail');
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('xhome');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('propertylist', 'App\Http\Controllers\PropertyListController');
+// ->only(['index', 'store'])
+// ->only(['index', 'create', 'store', 'edit', 'update', 'destroy']);
+// Route::post('propertylist', 'App\Http\Controllers\PropertyListController');
+//Routes for images
+Route::get('/add-image', [ImageController::class, 'create'])->name('image.add');
+Route::post('/store-image', [ImageController::class, 'store'])->name('image.store');
+Route::get('/show-image', [ImageController::class, 'show'])->name('image.show');

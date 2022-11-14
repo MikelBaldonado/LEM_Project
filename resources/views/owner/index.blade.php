@@ -36,6 +36,7 @@
                     <th scope="col">Full Name</th>
                     <th scope="col">Address</th>
                     <th scope="col">Contact</th>
+                    <th scope="col">User ID</th>
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
@@ -44,13 +45,14 @@
                   @foreach ($owner as $item )
               
                     <tr>
-                      <td>{{$item->id}}</td>
-                      <td>{{$item->fullname}}</td>
-                      <td>{{$item->address}}</td>
-                      <td>{{$item->contact}}</td>
+                      <td>{{$item->owner_id}}</td>
+                      <td>{{$item->owner_fname}}  {{$item->owner_lname}}</td>
+                      <td>{{$item->owner_address}}</td>
+                      <td>{{$item->owner_contact_number}}</td>
+                      <td>{{$item->user_id}}</td>
                       <td>
-                          <a href="/owner/{{$item->id}}/edit" class="btn b" style="width:100px;">Edit</a>
-                          <form action="/owner/{{$item->id}}" method='post'>
+                          <a href="/owner/{{$item->owner_id}}/edit" class="btn b" style="width:100px;">Edit</a>
+                          <form action="/owner/{{$item->owner_id}}" method='post'>
                             {{method_field('DELETE')}}
                             {!! csrf_field() !!}
                             <input type="submit" value="Delete" class='btn' style="width:100px;">

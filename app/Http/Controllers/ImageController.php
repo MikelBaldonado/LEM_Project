@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Images;
+use App\Models\images;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ImageController extends Controller
 {
@@ -25,7 +26,7 @@ class ImageController extends Controller
         return redirect()->route('image.show');
     }
     public function show(){
-        $imageData = Images::all();
+        $imageData = images::all();
         return view('image.view_image')->with('imageData', $imageData);
     }
 

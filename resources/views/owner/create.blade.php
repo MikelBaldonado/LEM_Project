@@ -4,7 +4,7 @@
 @section('content')
 
 <section id="create">
-    <h1>Create New Record</h1>
+    <h1>Create New Owner Record</h1>
     <!-- Modal -->
     {{-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -16,11 +16,15 @@
             <div class="modal-body"> --}}
                 <form action="/owner" method='post'>
                     {!! csrf_field() !!}
-                    <input type="text" placeholder="Full Name" class="form-control shadow" placeholder="Name" style="border:#368D96 solid 1px;" name="fullname">
+                    <input type="text" placeholder="First Name" class="form-control shadow" style="border:#368D96 solid 1px;" name="owner_fname">
                     <br>
-                    <input type="text" placeholder="Address" class="form-control shadow" placeholder="Name" style="border:#368D96 solid 1px;" name="address">
+                    <input type="text" placeholder="Family Name" class="form-control shadow" style="border:#368D96 solid 1px;" name="owner_lname">
                     <br>
-                    <input type="text" placeholder="Contact Number" class="form-control shadow" placeholder="Name" style="border:#368D96 solid 1px;" name="contact">
+                    <input type="text" placeholder="Address" class="form-control shadow" style="border:#368D96 solid 1px;" name="owner_address">
+                    <br>
+                    <input type="text" placeholder="Contact Number" class="form-control shadow" style="border:#368D96 solid 1px;" name="owner_contact_number">
+                    <br>
+                    <input type="text" placeholder="Enter User ID" class="form-control shadow" style="border:#368D96 solid 1px;" name="user_id">
                     <br>
                     
                     <input type="submit" class="btn" value="Save">

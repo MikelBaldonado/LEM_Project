@@ -13,7 +13,7 @@ class OwnerController extends Controller
      */
     public function index()
     {
-        $owner = owner::orderby('fullname', 'asc')->simplePaginate(5);
+        $owner = owner::orderby('owner_fname', 'asc')->simplePaginate(5);
         
         return view('owner.index')->with('owner', $owner);
     }

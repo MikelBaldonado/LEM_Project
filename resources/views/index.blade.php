@@ -7,11 +7,11 @@
         <section id="Home" style="
           min-height: 65vh;
           background-color: #09141d;">
-            <div class="container">
+            <div class="container-fluid">
               <div class="row d-flex flex-row flex-wrap">
                 <div class="col-md-6 d-flex justify-content-center">
-                  <div class="card" style="padding-top:60px; height: 450px;
-                  width: 500px; background-color:#09141d">
+                  <div class="card" style="padding-right: 20px; padding-top:60px; height: auto;
+                  width: 600px; background-color:#09141d">
                     <h3 style="  font-size: 46px; color: #fff; font-family: 'Poppins', sans-serif;">
                     The best platform <br>to Buy and Sell properties</h3> <br>
                     <p style="font-size: 25px; color: white; font-family: 'Roboto Condensed', sans-serif;">
@@ -21,12 +21,11 @@
                   </div>   
                 </div>
               
-                <div class="col-md-6 d-flex justify-content-center" style="max-height: 450px;
-                -max-width: 600px;">
-                  <div class="card" style=background-color:#09141d>
+                <div class="col-md-6 d-flex justify-content-center" style="max-height: auto; max-width: 700px;">
+                  <div class="card" style="background-color:#09141d">
                     <img style=" margin-top: 3%;
                     height: auto;
-                    width: 600x;
+                    width: 700x;
                     border: solid black 3px;
                     border-top-left-radius: 190%;
                     border-top-right-radius: 190%;
@@ -81,66 +80,6 @@
         <section id="discover d-flex justify-content-center" style="background-color: #FAD9C1">
           <br><br>
           <h3 class="text-center">All Over The Philippines</h3>
-            {{-- <div class="row">
-              <div class="col mb-2 d-flex justify-content-center">
-                <div class="card shadow" style="width: 20rem;">
-                  <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                    <h6>Location: 123 Riza St. Dumaguete City</h6>
-                    <h6>No. of Bedrooms: 2 Only</h6>
-                    <h6>Price: ₱ 10,000 Monthly </h6>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br> <br> 
-              <div class="container">
-                <div class="row">
-                  <div class="col mb-2 d-flex justify-content-center">
-                    <div class="card shadow" style="width: 20rem;">
-                      <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                        <h6>Location: 123 Riza St. Dumaguete City</h6>
-                        <h6>No. of Bedrooms: 2 Only</h6>
-                        <h6>Price: ₱ 10,000 Monthly </h6>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mb-2 d-flex justify-content-center">
-                    <div class="card shadow" style="width: 20rem;">
-                      <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                        <h6>Location: 123 Riza St. Dumaguete City</h6>
-                        <h6>No. of Bedrooms: 2 Only</h6>
-                        <h6>Price: ₱ 10,000 Monthly </h6>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                    <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="col mb-2 d-flex justify-content-center">
-                    <div class="card shadow" style="width: 20rem;">
-                      <img class="card-img-top" src="/assets/Room4.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Create a new journey while experiencing the rich and diverse culture of Dumaguete City.</p>
-                        <h6>Location: 123 Riza St. Dumaguete City</h6>
-                        <h6>No. of Bedrooms: 2 Only</h6>
-                        <h6>Price: ₱ 10,000 Monthly </h6>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">Contact Agent</button>
-                        <button type="button" class="btn-lg" style="font-family:'Poppins', sans-serif; width: 8.5rem; height: 2.5rem; background-color:#368D96; border:none; border-radius: 8px;">See Details</button>
-                      </div>
-                    </div>
-                  </div>
-                </div> --}}
-            {{--  --}}
 
             <div Class="propertiesList " >
               @foreach ($properties as $item)

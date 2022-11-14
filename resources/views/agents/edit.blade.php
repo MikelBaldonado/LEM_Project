@@ -12,15 +12,15 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body"> --}}
-                <form action="/agents/{{$owner->id}}" method='post'>
+                <form action="/agents/{{$agents->id}}" method='post'>
                     {!! csrf_field() !!}
                     @method('PATCH')
-                    <input type="hidden" class='form-control' name = "id" value="{{$owner->id}}">
-                    <input type="text" placeholder="Full Name" class="form-control" name="fullname" value="{{$owner->fullname}}">
+                    <input type="hidden" class='form-control' name = "id" value="{{$agents->id}}">
+                    <input type="text" placeholder="Full Name" class="form-control" name="fullname" value="{{$agents->fullname}}">
                     <br>
-                    <input type="text" placeholder="Address" class="form-control" name="address" value="{{$owner->address}}">
+                    <input type="text" placeholder="Address" class="form-control" name="address" value="{{$agents->address}}">
                     <br>
-                    <input type="text" placeholder="Contact Number" class="form-control" name="contact" value="{{$owner->contact}}">
+                    <input type="text" placeholder="Contact Number" class="form-control" name="contact" value="{{$agents->contact}}">
                     <br>
                    
                     <input type="submit" class="btn btn-primary" value="Update">

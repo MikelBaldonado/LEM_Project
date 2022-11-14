@@ -20,7 +20,7 @@
 
                     <select name="province" >
                         @foreach ($province as $item )
-                            <option value="{{$province->province_description}}">{{$province->province_description}}</option>   
+                            <option value="{{$item->province_description}}">{{$item->province_description}}</option>   
                         @endforeach                    
                     </select>
                     

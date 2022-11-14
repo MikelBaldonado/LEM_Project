@@ -47,12 +47,13 @@ class PropertiesController extends Controller
                 'filterprovince' =>$filterprovince
             ];
             return view('propertiesShow.index')->with($data);
+            // return view('properties.index')->with($data);
 
     }
 
     public function showAdminIndex() {
         $properties = properties::orderby('property_description', 'asc')->simplePaginate(5);        
-        return view('properties.index')->with('properties', $properties);
+        return view('propertiesShow.index')->with('properties', $properties);
     }
 
 
@@ -274,9 +275,9 @@ public function filter(Request $request)
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($xid)
     {
-        $updateProperties = properties::find($id);
+        $updateProperties = xproperties::xfind($property_id);
         return view('properties.edit')->with('properties', $updateProperties);
     }
 

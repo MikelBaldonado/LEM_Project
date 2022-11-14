@@ -9,6 +9,6 @@ class province extends Model
 {
     use HasFactory;
     protected $table = 'province_tbl';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'province_id';
     protected $fillable = ['province_description'];
 }
