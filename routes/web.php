@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\ImageController;
+use App\Http\Controllers\BotManController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,7 @@ Route::get('/', 'App\Http\Controllers\PageController@index');
 Route::get('/about', 'App\Http\Controllers\PageController@about');
 Route::get('/contact', 'App\Http\Controllers\PageController@contact');
 Route::get('/pricing', 'App\Http\Controllers\PageController@pricing');
+Route::match(['get', 'post'], 'botman', [BotManController::class, 'handle']);
 
 // HomeProperties
 Route::get('/homeproperties', 'App\Http\Controllers\HomePropertiesController@index');

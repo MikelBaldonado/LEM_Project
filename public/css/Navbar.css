@@ -28,7 +28,7 @@
 
 .dropdown-menu{
   color: #000;
-  background-color: #14537d;
+  background-color: #368D96;
 }
 
 button.btn-lg-explore a {
@@ -56,7 +56,7 @@ button.btn-lg-explore :hover {
   padding: 10px;
   /* height: 80vh; */
   /* width: auto; */
-  background-color: #10202B;
+  background-color: #fff;
   }
   
 .recent-image img {

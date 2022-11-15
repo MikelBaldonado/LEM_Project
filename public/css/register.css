@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
     }
 #register {
-    height: 105vh;
+    height: 75vh;
     width: 100vw;
     background-color: #fff;
     padding: 20px;
@@ -29,6 +29,7 @@ div.card-header {
 button.btn {
   background-color: #368D96;
   color: #fff;
+  border: none;
 }
 
 

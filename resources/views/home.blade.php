@@ -1,12 +1,14 @@
 @extends('layouts.navbar')
 @section('content')
-    <h1 class="text-center">Welcome to our Gallery!</h1>
+<br>
+    <h1 class="text-center">Welcome to our Gallery <Span style="text-transform:capitalize; color:#368D96">{{ Auth::user()->name }}</Span>!</h1>
     {{-- {{ Auth::user()->name }} --}}
+    <br>
     <div class="container row d-flex align-item-center" style="margin-left:auto; margin-right:auto; max-width:1400px; max-height:600px; background-color:#368D96">
   <!--       Carousel of my Hobbies -->
   
   <div id="carouselSlide" class="carousel slide " data-bs-ride="carousel" > 
-    <div class="carousel-indicators">
+    <div class="carousel-indicators" >
         <button data-bs-target="#carouselSlide" data-bs-slide-to="0" class="active"></button>
         <button data-bs-target="#carouselSlide" data-bs-slide-to="1"></button>
         <button data-bs-target="#carouselSlide" data-bs-slide-to="2"></button>

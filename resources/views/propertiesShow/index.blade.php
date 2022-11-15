@@ -6,14 +6,14 @@
 
 {{-- Updated Code --}}
 <div class="container-fluid justify-content-center align-items-center pt-2" style="margin-left:auto; margin-right:auto ">
-    <h1 class="justify-content-center align-items-center" style="font-family: cursive; nfont-size:60px; text-align: center">Search Properties</h1>
+    <h1 class="justify-content-center align-items-center" style="font-size:60px; text-align: center">Search Properties</h1>
     <div class="row p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center xbg-primary" style="justify-content: center; align-items:center; text-align:center" >
 
     <form action="/searchproperties" method="get" enctype="multipart/form-data" class="xbg-warning">
       @csrf
       <p class="row xbg-success p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center">
       
-        <select class="btn bg-light" name="province" id="province" value="province" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+        <select class="btn shadow" name="province" id="province" value="province" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border-radius:8px; background-color:#09141d; color: #fff;">
         <option value="">By Province</option>
         @foreach($province as $item)
           <option value="{{($item->province_id)}}">{{(Str::title($item->province_description))}}</option>
@@ -27,7 +27,7 @@
 
       </script>
 
-      <select class="btn bg-light"  name="citymun" id="citymun" value="citymun" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px">
+      <select class="btn shadow"  name="citymun" id="citymun" value="citymun" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border-radius:8px; background-color:#09141d; color: #fff;">
         <option value="">By City/Municipality</option>
         @foreach($citymunicipality as $item)
           <option type="text" value={{($item->city_mun_id)}}>{{(Str::title($item->city_mun_description))}}</option>
@@ -40,7 +40,7 @@
         };
       </script>
 
-      <select class="btn bg-light" name="price" id="price" value="price" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+      <select class="btn shadow" name="price" id="price" value="price" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px;border-radius:8px; background-color:#09141d; color: #fff;">
         <option value="">By Price Range</option>
         <option value="20000000">20,000,000.00 and above</option>
         <option value="10000000">10,000,000.00 - 19,999,999.99</option>
@@ -55,7 +55,7 @@
 
       {{-- <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:skyblue; color: blue; transform:scale(1:1.03)" ><b>Submit</b></button> --}}
 
-        <a class="btn filterButtonReset" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:#FE9C8F; texts-decoration: none; color:red" href="/properties"><b>Reset</b></a>
+        <a class="btn filterButtonReset   shadow" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px;border-radius:8px; background-color:#09141d; color: #fff; texts-decoration: none; " href="/properties"><b>Reset</b></a>
       
       </p>
     </form>

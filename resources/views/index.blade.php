@@ -45,7 +45,7 @@
             @csrf
             <p class="row xbg-success p-2 mx-2 d-flex flex-row flex-wrap text-align-center justify-content-center align-items-center">
             
-              <select class="btn bg-light" name="province" id="province" value="province"  style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+              <select class="btn shadow" name="province" id="province" value="province"  style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border-radius:8px; background-color:#09141d; color: #fff;">
               <option value="">Select Province</option>
               @foreach($province as $item)
                 <option value="{{($item->province_id)}}">{{(Str::title($item->province_description))}}</option>
@@ -59,7 +59,7 @@
               };
             </script>
 
-            <select class="btn bg-light" name="price" id="price" value="price" type="number" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border: solid blue; border-radius:15px">
+            <select class="btn shadow" name="price" id="price" value="price" type="number" style="width:200px; margin-right: 10px; margin-left: 10px; margin-bottom:5px; border-radius:8px; background-color:#09141d; color: #fff;">
               <option value="">Select Price Range</option>
               <option value="20000000">20,000,000.00 and above</option>
               <option value="10000000">10,000,000.00 - 19,999,999.99</option>
@@ -73,14 +73,13 @@
             </script>
             {{-- <button class="btn filterButtonSubmit" type="submit" style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:skyblue; color: blue; transform:scale(1:1.03)" ><b>Submit</b></button> --}}
 
-             <a class="btn filterButtonReset" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; border: solid blue;  border-radius:15px; background-color:#FE9C8F; texts-decoration: none; color:red" href="/"><b>Reset</b></a>
+             <a class="btn filterButtonReset shadow" type="Reset"  style="width:200px; margin-right:10px; margin-left: 10px; margin-bottom:5px; texts-decoration: none; border-radius:8px; background-color:#09141d; color: #fff;" href="/"><b>Reset</b></a>
           </form>
 
         </section>
-        <section id="discover d-flex justify-content-center" style="background-color: #FAD9C1">
+        <section id="discover d-flex justify-content-center" style="background-color: #fff;">
           <br><br>
-          <h3 class="text-center">All Over The Philippines</h3>
-
+          <h3 class="text-center">Discover Awesome Properties</h3>
             <div Class="propertiesList " >
               @foreach ($properties as $item)
                   <div Class="propertiesItem">
@@ -142,10 +141,10 @@
           {{--  --}}
           </div>
           <br>
-        <section id="Grid-Places" style="  min-height: 50vh;">
+        <section id="Grid-Places" style="  min-height: 50vh; background-color:#09141d; color:#fff;">
           <br> <br>
           <div class="container">
-            <h3 class="text-center">Discover Awesome Properties</h3>
+            <h3 class="text-center">All Over The Philippines</h3>
             <br> <br>
 
             <div class="row">
@@ -264,12 +263,13 @@
                   </div>
               </div> 
           </div> --}}
-          <section id="recent">
+          <section id="recent" style="background-color:#09141d;">
           {{-- //Flex row layout --}}
           <div class=" row recent-image d-flex flex-row justify-content-center align-items-center ">
             {{--    --}}
              {{-- <img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image "> --}}
-            {{-- <h3 style="display:flex; justify-content:start" ><img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image">Recent Listing</h3> --}}
+            {{-- <h3><img src="/assets/HouseEmoji.png" alt="house emoji" class="recent-image"></h3>
+            <h3>Recent Listings</h3> --}}
         </div>
         <div class="container " style="margin-left:auto; margin-right:auto" > 
           {{-- d-flex justify-content-around align-contents-center text-align-center align-items-center --}}
@@ -284,7 +284,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Inquire</button>
+                      <button class="btn  shadow" style="background-color: #368D96"><a href="{{('/contact')}}" style="text-decoration: none; color: #fff;">Inquire</a></button>
                     </div>
                 </div>
             </div>
@@ -297,7 +297,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Inquire</button>
+                      <button class="btn" style="background-color: #368D96"> <a href="{{('/contact')}}" style="text-decoration: none; color: #fff;">Inquire</a></button>
                     </div>
                 </div>
             </div>
@@ -310,7 +310,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Inquire</button>
+                      <button class="btn  shadow" style="background-color: #368D96"> <a href="{{('/contact')}}" style="text-decoration: none; color: #fff;">Inquire</a></button>
                     </div>
                 </div>
             </div>
@@ -323,7 +323,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Inquire</button>
+                      <button class="btn  shadow" style="background-color: #368D96"> <a href="{{('/contact')}}" style="text-decoration: none; color: #fff;">Inquire</a></button>
                     </div>
                 </div>
             </div>
@@ -336,7 +336,7 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Inquire</button>
+                      <button class="btn  shadow" style="background-color: #368D96"><a href="{{('/contact')}}" style="text-decoration: none; color: #fff;">Inquire</a></button>
                     </div>
                 </div>
             </div>
@@ -349,34 +349,41 @@
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
-                      <button class="btn "> Inquire</button>
-                    </div>
+                      <button class="btn  shadow" style="background-color: #368D96"> <a href="{{('/contact')}}" style="text-decoration: none; color: #fff;">Inquire</a> </button>
+                    
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
+            {{-- <div class="col-md-4">
+                <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px"> --}}
                     <!--inserted overflow property-->
-                    <img src="/assets/house.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    {{-- <img src="/assets/house.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px"> --}}
                     {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
-                    <div class="card-body overlay">
+                    {{-- <div class="card-body overlay">
                       <p>123BZ Rizal St. Makati City</p>
                       <p>3 Storey House with 5 bedrooms</p>
                       <p>15,000 to 20,000 per month</p>
                       <button class="btn "> Inquire</button>
                     </div>
                 </div>
-            </div>
-
-            
+            </div> --}}
 
             </div>
           </div>
           </div>
         </section>
-        {{--  --}}
+        {{--BOTMAN--}}
+        <section>
+        <script>
+          var botmanWidget = {
+          aboutText: 'Write Something',
+          introMessage: "✋ Hi! I'm Nichole from LEM Properties"
+          };
+        </script>
+        
+        <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>  
+      </section>       
       </main>
 
-    <div>
       @endsection
     {{-- </div> --}}
     
