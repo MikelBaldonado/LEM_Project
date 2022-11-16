@@ -109,6 +109,7 @@
       </div>
     </div>
   </nav>
+  <script src="{{secure_asset('build/assets/app.css')}}"></script>
 <div>
  <main>
 
