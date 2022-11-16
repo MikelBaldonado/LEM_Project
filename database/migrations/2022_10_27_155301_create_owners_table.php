@@ -13,11 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('owners', function (Blueprint $table) {
+        Schema::create('owner_tbl', function (Blueprint $table) {
             $table->id();
-            $table->string('fullname');
-            $table->string('address');
-            $table->string('contact');
+            $table->string('owner_fname');
+            $table->string('owner_lname');
+            $table->string('owner_address');
+            $table->string('owner_contact_number');
+            $table->string('user_id');
             $table->timestamps();
         });
     }

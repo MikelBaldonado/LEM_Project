@@ -13,8 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('property_types', function (Blueprint $table) {
+        Schema::create('property_type_tbl', function (Blueprint $table) {
             $table->id();
+            $table->string('property_type');
             $table->timestamps();
         });
     }
