@@ -20,7 +20,7 @@ class PropertyListController extends Controller
         $properties = properties::orderBy("province_description", "asc")
         ->leftJoin("province_tbl", "properties_tbl.property_province_id", "=", "province_tbl.province_id")
         ->leftJoin("city_municipality_tbl", "properties_tbl.city_mun_id", "=", "city_municipality_tbl.city_mun_id")
-        ->leftJoin("image_tbl", "property_image_id", "=", "image_tbl.image_id")
+        // ->leftJoin("image_tbl", "property_image_id", "=", "image_tbl.image_id")
         ->leftJoin("images", "property_image_id", "=", "images.id")
         // ->orderBy("province_description", "asc")
         // ->get()
@@ -80,7 +80,7 @@ class PropertyListController extends Controller
         $properties = DB::table("properties_tbl")
         ->leftJoin("province_tbl", "properties_tbl.property_province_id", "=", "province_tbl.province_id")
         ->leftJoin("city_municipality_tbl", "properties_tbl.city_mun_id", "=", "city_municipality_tbl.city_mun_id")
-        ->leftJoin("image_tbl", "property_image_id", "=", "image_tbl.image_id")
+        // ->leftJoin("image_tbl", "property_image_id", "=", "image_tbl.image_id")
         ->leftJoin("images", "property_image_id", "=", "images.id")
         ->orderBy("province_description", "asc")
         ->get();
