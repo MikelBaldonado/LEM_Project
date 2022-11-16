@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->string('property_title')->nullable();
             $table->string('property_description')->nullable();
-            $table->integer('province_province_id')->nullable();
+            $table->integer('property_province_id')->nullable();
             $table->integer('city_mun_id')->nullable();
             $table->string('floor_area')->nullable();
             $table->string('lot_area')->nullable();
