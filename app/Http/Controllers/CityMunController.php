@@ -49,7 +49,7 @@ class CityMunController extends Controller
         $input = $request->all();
         citymun::create($input);
 
-        return redirect('citymun');
+        return redirect('citymun.index');
     }
 
     /**
