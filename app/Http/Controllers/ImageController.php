@@ -18,7 +18,7 @@ class ImageController extends Controller
             $file = $request->file('images');
             // $file = $request->file('image_tbl');
             $filename = date('YmdHi').$file->getClientOriginalName();
-            $file->move(public_path('Image/'), $filename);
+            $file->move(public_path('image/'), $filename);
             $data['images'] = $filename;
             // $data['image_filename'] = $filename;
         }
