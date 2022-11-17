@@ -18,14 +18,22 @@
                     {!! csrf_field() !!}
 
 
-                    <select name="province" >
+                    {{-- <input name="province_id" list="provincename" type="text">
+                        <datalist id = "provincename">
+                        <option> value=""
                         @foreach ($province as $item )
-                            <option value="{{$item->province_description}}">{{$item->province_description}}</option>   
+                            <option value="{{$item->province_id}}">{{$item->province_description}}
+                            </option>   
+                        @endforeach                    
+                        </datalist> --}}
+                    <select name="province_id" > type="input"
+                        @foreach ($province as $item )
+                            <option value="{{$item->province_id}}">{{$item->province_description}}</option>   
                         @endforeach                    
                     </select>
                     
 
-                    <input type="text" placeholder="City/Municipality" class="form-control shadow" name="citymun_description" style="border:#368D96 solid 1px;">
+                    <input type="text" placeholder="City/Municipality" class="form-control shadow" name="city_mun_description" style="border:#368D96 solid 1px;">
                     <br>
                     
                     

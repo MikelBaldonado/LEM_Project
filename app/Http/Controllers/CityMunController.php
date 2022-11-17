@@ -46,10 +46,11 @@ class CityMunController extends Controller
      */
     public function store(Request $request)
     {
+        // $input = $request->all();
         $input = $request->all();
-        citymun::create($input);
+        CityMun::create($input);
 
-        return redirect('citymun.index');
+        return redirect('citymun');
     }
 
     /**
