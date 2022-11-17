@@ -14,7 +14,7 @@ class ProvinceController extends Controller
      */
     public function index()
     {
-        $province = province::orderby('province_description', 'asc')->simplePaginate(5);
+        $province = Province::orderby('province_description', 'asc')->simplePaginate(5);
         
         return view('province.index')->with('province', $province);
     }
