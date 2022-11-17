@@ -17,6 +17,7 @@
     <div class="container col-md-6 justify-content align-content-center align-text-center" style=" height:auto; border:solid 1px antiquewhite;">
         <form action="/propertylist" method='post'>
             {!! csrf_field() !!}
+            <input type="hidden" placeholder="Property ID" class="form-control" name="property_id">
             <input type="text" placeholder="Property Title" class="form-control" name="property_title">
             <br>
             <textarea type="text" rows="2" placeholder="Property Description (Ex. Located in the heart of Makati, this condo is fully furnished and ready for occupancy. Five Bedrooms + Four Toilet & Baths + Kitchen + Dining + Living Area + Balcony.)" class="form-control" name="property_description" style="overflow-y: scroll"></textarea>
@@ -33,7 +34,16 @@
             <br>
             <input type="text" placeholder="Owner ID" class="form-control" name="owner_id">
             <br>
-            <input type="text" placeholder="Property Type ID" class="form-control" name="property_type_id">
+            {{-- <input type="text" placeholder="Property Type ID" class="form-control" name="property_type_id"> --}}
+            <input type="number" placeholder="Property Type ID" class="form-control" name="property_type_id" list ="propertytype" min="1" max="5">
+            <datalist id="propertytype">
+                <option value="1">Condominium</option>
+                <option value="2">Apartment</option>
+                <option value="3">House</option>
+                <option value="4">House & Lot</option>
+                <option value="5">Land</option>
+
+            </datalist>
             <br>
             <input type="hidden" placeholder="Property Image ID" class="form-control" name="property_image_id">
             {{-- <br> --}}
