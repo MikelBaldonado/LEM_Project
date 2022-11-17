@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/Ayala-West.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/Ayala-West.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Ayala West</h1>
                                    
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/Apartment.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/Apartment.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Modern Apartments</h1>
                                    
@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/AyalaResidences.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/AyalaResidences.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Ayala Residences</h1>
                                    
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/CommonwealthRes.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/CommonwealthRes.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Commonwealth Residences</h1>
                                    
@@ -69,7 +69,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/condo.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/condo.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Sunrise Condominium</h1>
                                    
@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/DiningArea.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/DiningArea.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Enerio Apartments</h1>
                                    
@@ -85,7 +85,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/dusit_residence_hero.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/dusit_residence_hero.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Dusit Residence Hero</h1>
                                    
@@ -93,7 +93,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/for_buy.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/for_buy.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Enerio Balungcas Apartments</h1>
                                    
@@ -101,7 +101,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/for_rent.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/for_rent.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Michael Baldonado Apartments</h1>
                                    
@@ -109,7 +109,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/for_sell.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/for_sell.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Lomejane Babao Apartments</h1>
                                    
@@ -117,7 +117,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/House.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/House.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Candello Houses</h1>
                                    
@@ -125,7 +125,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/MangoCondo.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/MangoCondo.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Mango Condominium</h1>
                                    
@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/Lomejane.PNG" class="d-block w-100" style="max-width:600px; max-height:600px; margin-left:auto; margin-right:auto">
+            <img src="/assets/Lomejane.png" class="d-block w-100" style="max-width:600px; max-height:600px; margin-left:auto; margin-right:auto">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Project Lead, Fullstack Web Developer</h1>
                                    
@@ -141,7 +141,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/Michael.JPG" class="d-block w-100" style="max-width:600px; max-height:600px; margin-left:auto; margin-right:auto">
+            <img src="/assets/Michael.jpg" class="d-block w-100" style="max-width:600px; max-height:600px; margin-left:auto; margin-right:auto">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Project Member, Fullstack Web Developer</h1>
                                    
