@@ -278,7 +278,7 @@
             <div class="col-md-4">
                 <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
                     <!--inserted overflow property-->
-                    <img src="/assets/condo.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    <img src="/assets/Condo.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
                     {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
                     <div class="card-body overlay">
                       <p>123BZ Rizal St. Makati City</p>
@@ -291,7 +291,7 @@
             <div class="col-md-4">
                 <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
                     <!--inserted overflow property-->
-                    <img src="/assets/apartment.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    <img src="/assets/Apartment.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
                     {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
                     <div class="card-body overlay">
                       <p>123BZ Rizal St. Makati City</p>
@@ -304,7 +304,7 @@
             <div class="col-md-4">
                 <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
                     <!--inserted overflow property-->
-                    <img src="/assets/house.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    <img src="/assets/House.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
                     {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
                     <div class="card-body overlay">
                       <p>123BZ Rizal St. Makati City</p>
@@ -330,7 +330,7 @@
             <div class="col-md-4">
                 <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
                     <!--inserted overflow property-->
-                    <img src="/assets/apartment2.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    <img src="/assets/Apartment2.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
                     {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
                     <div class="card-body overlay">
                       <p>123BZ Rizal St. Makati City</p>
@@ -343,7 +343,7 @@
             <div class="col-md-4">
                 <div class="card my-5 mx-10" style="height: 470px; width:300px; overflow:hidden; border-radius: 5px">
                     <!--inserted overflow property-->
-                    <img src="/assets/house2.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
+                    <img src="/assets/House2.jpg" class="card-img-top" alt="Missing Image" style="height:250px; width:300px">
                     {{-- <div class="card-header text-center bg-warning"> <span style="color:red; font-weight: bolder;">This is Card Header</span></div> --}}
                     <div class="card-body overlay">
                       <p>123BZ Rizal St. Makati City</p>
