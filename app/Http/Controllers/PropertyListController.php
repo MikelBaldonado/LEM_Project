@@ -102,10 +102,10 @@ class PropertyListController extends Controller
             'citymunicipality' =>$citymunicipality,
             // 'filterprovince' =>$filterprovince
         ];
-        return view('propertieslist.index')->with($data);
+        // return view('propertieslist.index')->with($data);
         // return view('properties.index')->with($data);
         //redirect to the properties will not work even if the file propertiesList is indicated.
-        // return redirect('properties.propertieslist');
+        return redirect('propertylist');
     }
 
     /**
