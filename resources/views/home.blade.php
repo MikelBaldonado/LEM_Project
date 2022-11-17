@@ -29,7 +29,7 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/assets/3torre_hero.JPG" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/3torre_hero.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Torre Hero Residence</h1>
                                    
