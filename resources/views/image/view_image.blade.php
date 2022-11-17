@@ -19,7 +19,7 @@
     @foreach ($imageData as $item)
     <div class="col-md-4 card p-5">
         <p>{{$item->id}}</p>
-        <img src="{{'Image/'. $item->images}}" width="150px">
+        <img src="{{'image/'. $item->images}}" width="150px">
         {{$item->images}}
     </div>
 {{-- {{$imageData->Links()}}; --}}
