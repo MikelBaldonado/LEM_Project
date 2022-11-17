@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('properties_tbl', function (Blueprint $table) {
 
-            $table->id();
+            $table->id('property_id');
             $table->string('property_title')->nullable();
             $table->string('property_description')->nullable();
             $table->integer('property_province_id')->nullable();

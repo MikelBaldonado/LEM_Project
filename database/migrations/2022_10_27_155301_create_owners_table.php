@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('owner_tbl', function (Blueprint $table) {
-            $table->id();
+            $table->id('owner_id');
             $table->string('owner_fname');
             $table->string('owner_lname');
             $table->string('owner_address');
