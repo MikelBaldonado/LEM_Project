@@ -69,7 +69,7 @@
             </div>
         </div>
         <div class="carousel-item ">
-            <img src="/assets/condo.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
+            <img src="/assets/Condo.jpg" class="d-block w-100" style="max-width:1400px; max-height:600px">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Sunrise Condominium</h1>
                                    
@@ -149,7 +149,7 @@
             </div>
         </div>
         <div class="carousel-item align-item-center">
-            <img src="/assets/enerio1.JPG" class="d-block w-100 " style="max-width:600px; max-height:600px; margin-left:auto; margin-right:auto">
+            <img src="/assets/enerio1.jpg" class="d-block w-100 " style="max-width:600px; max-height:600px; margin-left:auto; margin-right:auto">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="text-light" style="font-weight: bolder;"> Project Member, Fullstack Web Developer</h1>
                                    
