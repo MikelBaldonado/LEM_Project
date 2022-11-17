@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Province;
+use App\Models\province;
 
 class ProvinceController extends Controller
 {
@@ -14,7 +14,7 @@ class ProvinceController extends Controller
      */
     public function index()
     {
-        $province = Province::orderby('province_description', 'asc')->simplePaginate(5);
+        $province = province::orderby('province_description', 'asc')->simplePaginate(5);
         
         return view('province.index')->with('province', $province);
     }
